@@ -1,0 +1,51 @@
+.STYLE1 {color: #EBF4F7}
+
+ .tableMasterHeaderAlone {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BACKGROUND: url(/webclient/devices/images/Denim/headingAlone.gif) #847cbb repeat-x; PADDING-BOTTOM: 3px; FONT: bold 8pt/12pt verdana, arial, sans-serif; COLOR: #ffffff; PADDING-TOP: 3px
+}
+.dashboard {
+	BACKGROUND: #ffffff
+}
+a:link { font-size: 12px; line-height: 200%; color: #000000; text-decoration: 
+  none} a:hover { font-size: 12px; line-height: 200%; color: #000066; text-decoration: 
+  underline} a:active { font-size: 12px; line-height: 200%; color: #000000; text-decoration: 
+  underline} a:visited { font-size: 12px; line-height: 200%; color: #000000; text-decoration: 
+  none} .fonts01 { font-size: 12px; line-height: 200%} .fonts02 { font-size: 12px} 
+  .fonts03 { font-size: 12px; line-height: 140%; color: 004e84} .hand { font-size: 
+  12px; line-height: 200%; cursor: hand} 
+  .button1 { height: 20px; border: 1px B5B8CB solid; background-color: #FFFFFF; 
+  top: 2px; clip: rect( 1px ); font-size: 9pt; background-image: url(tree/image/button_bg.gif); 
+  margin-top: 2px; margin-bottom: 1px; padding-top: 2px; padding-bottom: 1px}
+  
+.txtGlobal {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: blue; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.txtTbltdnch {
+	border-top: 1px solid #cedefa;border-bottom: 1px solid #cedefa; FONT-SIZE: 9pt; FONT-FAMILY: ËÎÌו;
+}
+.txtGlobalBold {
+	FONT: bold 8pt/12pt verdana, arial, sans-serif; COLOR: #000000
+}
+.txtGlobalBoldWhite {
+	FONT: bold 8pt/12pt verdana, arial, sans-serif; COLOR: #ffffff; cellpadding: 4px
+}
+.txtGlobalBigBold {
+	FONT: bold 10pt/14pt verdana, arial, sans-serif; COLOR: #000000
+}
+.txtResponseTime {
+	FONT: 21pt/21pt verdana, arial, sans-serif; COLOR: #aabbaa
+}
+#status {
+	float: right; /* Opera5.02 will show a space at right when there is no scroll bar */
+	padding: 0px;
+	margin: 5px;
+	border: 0px;
+	background: #FFF;
+	width: 40%; /* ie5win fudge begins */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width: 36%;
+}
+html>body #status {
+	width: 36%; /* ie5win fudge ends */
+}

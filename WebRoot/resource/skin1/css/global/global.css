@@ -1,0 +1,1084 @@
+﻿@CHARSET "UTF-8";
+
+
+/* 页面样式 */
+#body{
+	/* 背景颜色 */
+	background:url("../../image/global/bg.jpg");
+	FONT-SIZE: 9pt; LINE-HEIGHT: 12pt; FONT-FAMILY: "����";
+}
+
+/* 页面文字样式 */
+td {	FONT-SIZE: 9pt; LINE-HEIGHT: 12pt; FONT-FAMILY: "����"}
+li {	FONT-SIZE: 9pt; LINE-HEIGHT: 12pt; FONT-FAMILY: "����"}
+a:hover {	COLOR: #000066; TEXT-DECORATION: underline}
+a {	COLOR: #444488; TEXT-TRANSFORM: none; TEXT-DECORATION: none}
+input {   FONT-SIZE: 9pt; FONT-FAMILY: "����"}
+textarea {   FONT-SIZE: 9pt; FONT-FAMILY: "����"}
+select {  FONT-SIZE: 9pt; FONT-FAMILY: "����";border:1px solid black}
+
+/* 所有的 table 默认样式*/
+table{
+	border:0;
+	margin:0;
+	border-collapse:collapse;
+	width:100%;
+}
+
+/* 所有的 td 默认样式*/
+td{
+	padding:0;
+}
+
+/* 页面容器样式 */
+#body-container{
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:-1;
+	background:#f5f5f5 url(../../image/bg.jpg)
+}
+
+/* ================================================================== */
+
+.conent-header{
+	background-image:url("../../image/global/content_header_background.jpg");
+}
+
+/* ======================================== 页面菜单样式开始 ====================================================*/
+
+.td-container-menu-bar{
+	vertical-align:top;
+	width:200px;
+}
+
+/* 页面菜单总体样式 */
+#container-menu-bar{
+	vertical-align:top;
+	width:200px;
+	background-position :top right; 
+	text-align:center;
+	background:#f5f5f5 url(../../image/global/menuBarBackground.jpg);
+
+}
+
+#container-menu-bar1{
+	width:200px;
+	background-position :top right; 
+	text-align:center;
+	background:#f5f5f5 url(../../image/global/menuBarBackground.jpg);
+}
+
+.menu-bar{
+	/*菜单总体宽度*/
+	width:190px;
+	margin: 5px auto;
+	position :relative;
+	
+}
+
+/* 页面每个菜单头部样式 */
+.menu-bar-header {
+	/*菜单头部的样式*/
+	width:190px;
+	height: 22px;
+	border-bottom-style: none;/*底部边框没有*/
+	background-image:url("../../image/global/menuBar_header_background.jpg");
+	position: relative;	
+	float: left;
+}
+
+/* 页面每个菜单标题样式 */
+.menu-bar-title{
+	font-family:宋体, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#D9E1F6;
+	text-align:center;
+}
+
+.menu-bar-title a , .menu-bar-title a:hover{/*菜单标题中的链接的样式，共同的部分*/
+	color: #FFFFFF;
+	display:block;
+	text-decoration:none;
+	width:180px;
+	background-repeat: no-repeat;
+	background-position: 150px 6px;
+	cursor: pointer;
+}
+.menu-bar-title a:link{/*菜单标题中的链接的样式，共同的部分*/
+	color: #D9E1F6;
+	display:block;
+	text-decoration:none;
+	width:180px;
+	background-repeat: no-repeat;
+	background-position: 150px 6px;
+	cursor: pointer;
+}
+/*====================
+	菜单标题中的箭头图片
+======================*/
+.on{
+	background-repeat: no-repeat;
+	background-image: url(/afunms/resource/skin1/image/arrow_up.gif);/*向上的箭头-暗色*/
+}
+.on:hover{
+	background-repeat: no-repeat;
+	background-image: url(/afunms/resource/skin1/image/arrow_up_o.gif);/*向上的箭头-亮色*/
+}
+.off{
+	background-repeat: no-repeat;
+	background-image: url(/afunms/resource/skin1/image/arrow_down.gif);/*向下的箭头-暗色*/
+}
+.off:hover{
+	background-repeat: no-repeat;
+	background-image: url(/afunms/resource/skin1/image/arrow_down_o.gif);/*向下的箭头-亮色*/
+}
+
+/* 页面每个菜单体样式 */
+.menu-bar-body{
+	width:190px;
+	background-color:#ffffff;
+	background-position :top;
+	text-align:left;
+	padding:10px;
+	overflow:hidden;
+	/*
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #03493c;
+	border-left-color: #03493c;
+	*/
+}
+
+/* 页面每个菜单列表样式 */
+.menu-bar-body-list{
+	font-size: 12px;
+	color: #002280;
+	width: 100%;/*宽度*/
+	/*border: 1px solid #2A4DAB;*/
+	text-align:left;
+	padding:0px 5px;
+	voice-family:"\"}\"";
+	voice-family:inherit;
+	width:100%;
+	overflow:hidden;
+	background-image:url("/afunms/resource/image/global/bg6.jpg");
+}
+
+/* 页面每个菜单列表样式 */
+.menu-bar-body-list ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	padding-left:7px;
+}
+
+/* 页面每个菜单项样式 */
+.menu-bar-body-list li{
+	margin:0;
+	padding:2;
+	padding-left:5px;
+}
+
+.menu-bar-body-list a{
+	color:#002280;
+	text-decoration:none;
+}
+.menu-bar-body-list a:link{
+	color:#002280;
+}
+.menu-bar-body-list a:hover{
+	color:#296DC1;
+	text-decoration:underline;
+}
+.menu-bar-body-list a:active{
+	color:#296DC1;
+}
+
+/* 页面每个菜单底部样式 */
+.menu-bar-footer {
+	width:100%;
+	background-image:url("../../image/global/menuBar_footer_background.jpg");
+	float: left;
+}
+
+/* ======================================== 页面菜单样式结束 ====================================================*/
+
+/* ======= 页面主体样式开始 ==========*/
+
+/* ======= 页面主体所在的 td 样式 ==========*/
+.td-container-main{
+	vertical-align:top;
+}
+
+
+/* 页面主体所在 table 样式开始 */
+.container-main{
+	width:100%;
+	vertical-align:top;
+	clear:none;
+}
+
+.td-container-main-content{
+	text-align:center;
+}
+
+.container-main-content{
+	width:98%;
+	margin:0px auto 10px;
+}
+
+
+.td-content-tool{
+	text-align:center;
+	width:50%;
+}
+
+/* 详细监视信息右边每个 工具栏 总体样式*/
+.content-tool{
+	width:85%;
+	margin:0px auto 10px;
+	
+}
+
+/* 工具栏 头部样式*/
+.content-header{
+	background-image:url("../../image/global/content_header_background.jpg");
+}
+
+/* 标题样式*/
+.content-title{
+	font-family:宋体, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+	text-align:left;
+}
+
+/* body 样式*/
+.content-body{
+	background-position :top;
+	text-align:left;
+	padding:10px;
+	overflow:hidden;
+	/*
+	border-left: 1px #737272 solid; 
+	border-right: 1px #737272 solid;
+	*/
+	background-color:#ffffff;
+}
+/* body 标题样式*/
+.body-data-title {
+	font-size: 12px;
+	font-weight: bold;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #b9bec4;
+	border-bottom: 1pt solid #b9bec4;
+	height: 20px;
+	vertical-align: middle;
+	background-color: #f1f1f1;
+	text-align:center;
+	color: #404040;
+}
+
+/* body 列表*/
+.body-data-list {
+	font-size: 12px;
+	border-top: none black;
+	border-left: 0px solid #e8e9e9;
+	border-bottom: 1pt solid #e8e9e9;
+	border-right: 1px solid #e8e9e9;
+	padding-left: 4px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+}
+
+/* 内容底部样式 */
+.content-footer{
+	background-image:url("../../image/global/content_footer_background.jpg");
+}
+
+/* ======================================== 详细监视信息页面样式 =============================================== */
+
+/* =============== 详细监视信息所在 td 样式===============*/
+
+.td-container-main-detail{
+	vertical-align:top;
+	width:80%;
+}
+
+/* =============== 详细监视信息所在 table 样式===============*/
+.container-main-detail{
+	width:100%;
+	vertical-align:top;
+	text-align:center;
+}
+
+/* 详细监视信息内容样式 */
+.detail-content{
+	width:98%;
+	margin:0px auto 10px;
+}
+
+/* 详细监视信息内容头部样式 */
+.detail-content-header{
+	background-image:url("../../image/global/content_header_background.jpg");
+}
+
+/* 详细监视信息内容标题样式 */
+.detail-content-title{
+	font-family:宋体, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+	text-align:center;
+}
+
+/* 详细监视信息内容 body 样式 */
+.detail-content-body{
+/*
+	border-left: 1px #737272 solid; 
+	border-right: 1px #737272 solid;
+	*/
+	background-color:#ffffff;
+}
+
+/* 详细监视信息内容底部样式 */
+.detail-content-footer{
+	background-image:url("../../image/global/content_footer_background.jpg");
+}
+
+/* 详细监视信息指标样式 */
+.detail-data{
+	width:98%;
+	margin:0px auto 10px;
+}
+
+/* 详细监视信息指标样式 */
+.detail-data-header{
+	width:100%;
+	height:25;
+}
+
+/* 详细监视信息指标样式 */
+.detail-data-title{
+	width:72px;
+	font-size: 12px; 
+	text-align : center;
+	background-image:url(../../image/detail/title_on.gif);
+	height:25px;
+	color:#000000;
+}
+
+.detail-data-title-over{
+	width:72px;
+	font-size: 12px; 
+	text-align : center;
+	background-image:url(../../image/detail/title_over.gif);
+	height:25px;
+	color:#000000;
+}
+
+.detail-data-title-out{
+	width:72px;
+	font-size: 12px; 
+	text-align : center;
+	background-image:url(../../image/detail/title_out.gif);
+	height:25px;
+	color:#000000;
+}
+
+.detail-data-body {
+	width:100%;
+	background-color:#FFFFFF;
+	/*
+	border-right: 1px solid #737272;
+	border-left: 1px solid #737272;
+	*/
+	/*border-bottom: 1px solid #737272;*/
+	margin-top:0px;
+}
+
+.detail-data-body-title {
+	font-size: 12px;
+	font-weight: bold;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #b9bec4;
+	border-bottom: 1pt solid #b9bec4;
+	height: 20px;
+	vertical-align: middle;
+	background-color: #f1f1f1;
+	text-align:center;
+	color: #404040;
+}
+
+
+.detail-data-body-list {
+	font-size: 12px;
+	border-top: none black;
+	border-left: 0px solid #e8e9e9;
+	border-bottom: 1pt solid #e8e9e9;
+	border-right: 1px solid #e8e9e9;
+	padding-left: 4px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+}
+
+
+
+/* 详细监视信息右边工具栏所在 td 样式 */
+.td-container-main-tool{
+	vertical-align:top;
+}
+
+/* 详细监视信息右边 工具栏 总体样式 */
+.container-main-tool{
+	width:100%;
+	clear:none;
+}
+
+/* 详细监视信息右边每个 工具栏 总体样式*/
+.tool-bar{
+	width:100%;
+	margin:0px auto 5px;
+}
+
+/* 详细监视信息右边每个 工具栏 头部样式*/
+.tool-bar-header{
+	background-image:url("../../image/global/content_header_background.jpg");
+}
+
+/* 详细监视信息右边每个 工具栏 标题样式*/
+.tool-bar-title{
+	font-family:宋体, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+	text-align:center;
+}
+
+/* 详细监视信息右边每个 工具栏 body 样式*/
+.tool-bar-body{
+	background-position :top;
+	text-align:left;
+	padding:10px;
+	overflow:hidden;
+	/*
+	border-left: 1px #737272 solid; 
+	border-right: 1px #737272 solid;
+	*/
+	background-color:#ffffff;
+}
+
+/* 详细监视信息右边每个 工具栏 列表样式*/
+.tool-bar-body-list{
+	font-size: 12px;
+	color: #002280;
+	border:0px;
+	text-align:left;
+	padding:0px 5px;
+	voice-family:"\"}\"";
+	voice-family:inherit;
+	overflow:hidden;
+}
+
+/* 详细监视信息右边每个 工具栏 列表样式 */
+.tool-bar-body-list ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	padding-left:7px;
+}
+
+/* 详细监视信息右边每个 工具栏 列表项 样式 */
+.tool-bar-body-list li{
+	margin:0;
+	padding:2;
+	padding-left:5px;
+}
+
+/* 详细监视信息右边每个 工具栏 列表项图片 样式 */
+.tool-bar-body-list img{
+	border:none;
+	width:18;
+}
+
+.tool-bar-body-list a{
+	color:#002280;
+	text-decoration:none;
+}
+.tool-bar-body-list a:link{
+	color:#002280;
+}
+.tool-bar-body-list a:hover{
+	color:#296DC1;
+	text-decoration:underline;
+}
+.tool-bar-body-list a:active{
+	color:#296DC1;
+}
+
+/* 详细监视信息内容底部样式 */
+.detail-content-footer{
+	background-image:url("../../image/global/content_footer_background.jpg");
+}
+
+
+
+/* =========================================   详细监视信息页面样式结束   ======================================*/
+
+
+/* =========================================   添加页面样式开始 ======================================*/
+
+/* =============== 添加页面所在 td 样式===============*/
+
+.td-container-main-add{
+	vertical-align:top;
+}
+
+/* =============== 添加页面所在 table 样式===============*/
+.container-main-add{
+	width:100%;
+	vertical-align:top;
+	text-align:center;
+}
+
+/* 添加内容样式 */
+.add-content{
+	width:98%;
+	margin:0px auto 10px;
+}
+
+/* 添加内容头部样式 */
+.add-content-header{
+	background-image:url("../../image/global/content_header_background.jpg");
+}
+
+/* 添加内容标题样式 */
+.add-content-title{
+	font-family:����, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+}
+
+/* 添加内容 body 样式 */
+.add-content-body{
+/*
+	border-left: 1px #737272 solid; 
+	border-right: 1px #737272 solid;
+	*/
+	background-color:#ffffff;
+}
+
+/* 添加内容底部样式 */
+.add-content-footer{
+	background-image:url("../../image/global/content_footer_background.jpg");
+}
+
+/* =========================================   添加页面样式结束 ======================================*/
+
+
+/* ======================================== 应用详细监视信息页面样式 =============================================== */
+
+/* =============== 详细监视信息所在 td 样式===============*/
+
+.td-container-main-application-detail{
+	vertical-align:top;
+}
+
+/* =============== 详细监视信息所在 table 样式===============*/
+.container-main-application-detail{
+	width:100%;
+	vertical-align:top;
+	text-align:center;
+}
+
+/* 详细监视信息内容样式 */
+.application-detail-content{
+	width:98%;
+	margin:0px auto 10px;
+}
+
+/* 详细监视信息内容头部样式 */
+.application-detail-content-header{
+	background-image:url("../../image/global/content_header_background.jpg");
+}
+
+/* 详细监视信息内容标题样式 */
+.application-detail-content-title{
+	font-family:宋体, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+	text-align:center;
+}
+
+/* 详细监视信息内容 body 样式 */
+.application-detail-content-body{
+/*
+	border-left: 1px #737272 solid; 
+	border-right: 1px #737272 solid;
+	*/
+	background-color:#ffffff;
+}
+
+/* 详细监视信息内容底部样式 */
+.application-detail-content-footer{
+	background-image:url("../../image/global/content_footer_background.jpg");
+}
+
+/* 详细监视信息指标样式 */
+.application-detail-data{
+	width:98%;
+	margin:0px auto 10px;
+}
+
+/* 详细监视信息指标样式 */
+.application-detail-data-header{
+	width:710px;
+	height:25;
+}
+
+/* 详细监视信息指标样式 */
+.application-detail-data-title{
+	width:72px;
+	font-size: 12px; 
+	text-align : center;
+	background-image:url(../../image/detail/title_on.gif);
+	height:25px;
+	color:#000000;
+}
+
+.application-detail-data-title-over{
+	width:72px;
+	font-size: 12px; 
+	text-align : center;
+	background-image:url(../../image/detail/title_over.gif);
+	height:25px;
+	color:#000000;
+}
+
+.application-detail-data-title-out{
+	width:72px;
+	font-size: 12px; 
+	text-align : center;
+	background-image:url(../../image/detail/title_out.gif);
+	height:25px;
+	color:#000000;
+}
+
+.application-detail-data-body {
+	width:100%;
+	background-color:#FFFFFF;
+	/*
+	border-right: 1px solid #737272;
+	border-left: 1px solid #737272;
+	border-bottom: 1px solid #737272;
+	*/
+	margin-top:0px;
+}
+
+.application-detail-data-body-title {
+	font-size: 12px;
+	font-weight: bold;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #b9bec4;
+	border-bottom: 1pt solid #b9bec4;
+	height: 28px;
+	vertical-align: middle;
+	background-color: #f1f1f1;
+	text-align:center;
+	color: #404040;
+}
+
+
+.application-detail-data-body-list {
+	font-size: 12px;
+	border-top: none black;
+	border-left: 0px solid #e8e9e9;
+	border-bottom: 1pt solid #e8e9e9;
+	border-right: 1px solid #e8e9e9;
+	padding-left: 4px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+}
+
+/* ======================================== 应用详细监视信息页面样式 =============================================== */
+
+
+
+
+/* ======================================== 服务详细监视信息页面样式 =============================================== */
+
+/* =============== 详细监视信息所在 td 样式===============*/
+
+.td-container-main-service-detail{
+	width:80%;
+	vertical-align:top;
+	
+}
+
+/* =============== 详细监视信息所在 table 样式===============*/
+.container-main-service-detail{
+	width:100%;
+	vertical-align:top;
+	text-align:center;
+}
+
+/* 详细监视信息内容样式 */
+.service-detail-content{
+	width:98%;
+	margin:0px auto 10px;
+}
+
+/* 详细监视信息内容头部样式 */
+.service-detail-content-header{
+	background-image:url("../../image/global/content_header_background.jpg");
+}
+
+/* 详细监视信息内容标题样式 */
+.service-detail-content-title{
+	font-family:宋体, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+	text-align:center;
+}
+
+/* 详细监视信息内容 body 样式 */
+.service-detail-content-body{
+/*
+	border-left: 1px #737272 solid; 
+	border-right: 1px #737272 solid;
+	*/
+	background-color:#ffffff;
+}
+
+/* 详细监视信息内容底部样式 */
+.service-detail-content-footer{
+	background-image:url("../../image/global/content_footer_background.jpg");
+}
+
+/* 详细监视信息指标样式 */
+.service-detail-data{
+	width:98%;
+	margin:0px auto 10px;
+}
+
+/* 详细监视信息指标样式 */
+.service-detail-data-header{
+	width:710px;
+	height:25;
+}
+
+/* 详细监视信息指标样式 */
+.service-detail-data-title{
+	width:72px;
+	font-size: 12px; 
+	text-align : center;
+	background-image:url(../../image/detail/title_on.gif);
+	height:25px;
+	color:#000000;
+}
+
+.service-detail-data-title-over{
+	width:72px;
+	font-size: 12px; 
+	text-align : center;
+	background-image:url(../../image/detail/title_over.gif);
+	height:25px;
+	color:#000000;
+}
+
+.service-detail-data-title-out{
+	width:72px;
+	font-size: 12px; 
+	text-align : center;
+	background-image:url(../../image/detail/title_out.gif);
+	height:25px;
+	color:#000000;
+}
+
+.service-detail-data-body {
+	width:100%;
+	background-color:#FFFFFF;
+	/*
+	border-right: 1px solid #737272;
+	border-left: 1px solid #737272;
+	border-bottom: 1px solid #737272;
+	*/
+	margin-top:0px;
+}
+
+.service-detail-data-body-title {
+	font-size: 12px;
+	font-weight: bold;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #b9bec4;
+	border-bottom: 1pt solid #b9bec4;
+	height: 28px;
+	vertical-align: middle;
+	background-color: #f1f1f1;
+	text-align:center;
+	color: #404040;
+}
+
+
+.service-detail-data-body-list {
+	font-size: 12px;
+	border-top: none black;
+	border-left: 0px solid #e8e9e9;
+	border-bottom: 1pt solid #e8e9e9;
+	border-right: 1px solid #e8e9e9;
+	padding-left: 4px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+}
+
+/* 详细监视信息右边工具栏所在 td 样式 */
+.td-container-main-service-detail-tool{
+	vertical-align:top;
+}
+
+/* 详细监视信息右边 工具栏 总体样式 */
+.container-main-service-detail-tool{
+	width:100%;
+	clear:none;
+}
+
+/* 详细监视信息右边每个 工具栏 总体样式*/
+.service-detail-tool-bar{
+	width:85%;
+	margin:0px auto 10px;
+	
+}
+
+/* 详细监视信息右边每个 工具栏 头部样式*/
+.service-detail-tool-bar-header{
+	background-image:url("../../image/global/content_header_background.jpg");
+}
+
+/* 详细监视信息右边每个 工具栏 标题样式*/
+.service-detail-tool-bar-title{
+	font-family:宋体, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+	text-align:center;
+}
+
+/* 详细监视信息右边每个 工具栏 body 样式*/
+.service-detail-tool-bar-body{
+	background-position :top;
+	text-align:left;
+	padding:10px;
+	overflow:hidden;
+	/*
+	border-left: 1px #737272 solid; 
+	border-right: 1px #737272 solid;
+	*/
+	background-color:#ffffff;
+}
+
+/* ======================================== 服务详细监视信息页面样式 ===============================================*/
+
+
+
+/* ======================================== 报表页面样式 =============================================== */
+
+/* =============== 报表信息所在 td 样式===============*/
+
+.td-container-main-report{
+	vertical-align:top;
+}
+
+/* =============== 报表信息所在 table 样式===============*/
+.container-main-report{
+	width:100%;
+	vertical-align:top;
+	text-align:center;
+}
+
+/* 报表信息内容样式 */
+.report-content{
+	width:98%;
+	margin:0px auto 10px;
+}
+
+
+/* 报表信息指标样式 */
+.report-data-header{
+	width:710px;
+	height:25;
+}
+
+/* 报表信息指标样式 */
+.report-data-title{
+	width:72px;
+	font-size: 12px; 
+	text-align : center;
+	background-image:url(../../image/detail/title_on.gif);
+	height:25px;
+	color:#000000;
+}
+
+.report-data-title-over{
+	width:72px;
+	font-size: 12px; 
+	text-align : center;
+	background-image:url(../../image/detail/title_over.gif);
+	height:25px;
+	color:#000000;
+}
+
+.report-data-title-out{
+	width:72px;
+	font-size: 12px; 
+	text-align : center;
+	background-image:url(../../image/detail/title_out.gif);
+	height:25px;
+	color:#000000;
+}
+
+
+.report-content-body {
+	width:100%;
+	background-color:#FFFFFF;
+	/*
+	border-right: 1px solid #737272;
+	border-left: 1px solid #737272;
+	border-bottom: 1px solid #737272;
+	*/
+	margin-top:0px;
+}
+
+.report-data-header{
+	width:100%;
+	height:28px;
+	background-color:#ECECEC;
+
+}
+
+.report-data-body-title {
+	font-size: 12px;
+	font-weight: bold;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #b9bec4;
+	border-bottom: 1pt solid #b9bec4;
+	height: 28px;
+	vertical-align: middle;
+	background-color: #f1f1f1;
+	text-align:center;
+	color: #404040;
+}
+
+
+.report-data-body-list {
+	font-size: 12px;
+	border-top: none black;
+	border-left: 0px solid #e8e9e9;
+	border-bottom: 1pt solid #e8e9e9;
+	border-right: 1px solid #e8e9e9;
+	padding-left: 4px;
+	padding-bottom: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+}
+
+/* ======================================== 报表页面样式结束 =============================================== */
+
+
+/* ======================================== tool页面样式 =============================================== */
+
+/* =============== tool所在 td 样式===============*/
+
+.td-container-main-win{
+	width:98%;
+	vertical-align:top;
+}
+
+/* =============== 报表信息所在 table 样式===============*/
+.container-main-win{
+	width:100%
+	vertical-align:top;
+}
+
+/* 报表信息内容样式 */
+.win-content{
+	width:100%;
+	margin:0px auto 10px;
+}
+
+.win-content-header{
+	background-image:url("../../image/global/content_header_background.jpg");
+}
+
+.win-content-title{
+	font-family:宋体, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+}
+
+/* 详细监视信息内容 body 样式 */
+.win-content-body{
+/*
+	border-left: 1px #737272 solid; 
+	border-right: 1px #737272 solid;
+	*/
+	background-color:#ffffff;
+}
+
+/* 详细监视信息内容底部样式 */
+.win-content-footer{
+	background-image:url("../../image/global/content_footer_background.jpg");
+}
+
+.win-data{
+	width:100%;
+	margin:0px auto 10px;
+}
+
+.win-data-header{
+	background-image:url("../../image/global/content_header_background.jpg");
+}
+
+.win-data-title{
+	font-family:宋体, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+}
+
+/* 详细监视信息内容 body 样式 */
+.win-data-body{
+/*
+	border-left: 1px #737272 solid; 
+	border-right: 1px #737272 solid;
+	*/
+	background-color:#ffffff;
+}
+
+/* 详细监视信息内容底部样式 */
+.win-datat-footer{
+	background-image:url("../../image/global/content_footer_background.jpg");
+}
+.performance-status{
+	font-family: Times New Roman, Arial;
+	height: 26px; /*列表项的高度*/
+	line-height: 26px; /*列表项的行高，行高与高设为相同，文字垂直居中*/
+	text-indent: 18px; /*文字缩进24个像素，不然压到图表了*/
+	background-position: left 38%; /*背景图片的定位*/ 
+	background-repeat: no-repeat; /*禁止图片平铺，显示一个就好了*/
+}
+
+/* ======================================== 报表页面样式结束 =============================================== */

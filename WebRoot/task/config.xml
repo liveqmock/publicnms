@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : databases.xml
+    Created on : 2008年11月6日, 下午3:34
+    Author     : lijun
+    Description:
+        Purpose of the document follows.
+-->
+<root>
+    <databases>
+        <database 
+            type="SQLServer" 
+            name="JianKong2"
+            url="jdbc:jtds:sqlserver://10.52.11.32/dhcc_fv"
+            user="sa"
+            password="sxcnc"
+            className="net.sourceforge.jtds.jdbc.Driver">
+        </database>
+    </databases>
+</root>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="GBK"?>
+<Tasks>
+	
+	<Task>
+		<taskname>netcollecttask</taskname>
+		<startsign>0</startsign>
+		<modify>1</modify>
+		<polltime>5.0</polltime>
+		<polltimeunit>m</polltimeunit>
+	</Task>
+
+
+
+	<Task>
+		<taskname>timingBkpTask</taskname>
+		<startsign>1</startsign>
+		<modify>1</modify>
+		<polltime>1</polltime>
+		<polltimeunit>h</polltimeunit>
+	</Task>
+	
+
+	<Task>
+		<taskname>m5telnetConfgTask</taskname>
+		<startsign>0</startsign>
+		<modify>1</modify>
+		<polltime>5.0</polltime>
+		<polltimeunit>m</polltimeunit>
+	</Task>
+
+</Tasks>
+

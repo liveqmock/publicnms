@@ -1,0 +1,81 @@
+td {  font-size: 9pt; font-family: "Arial", "Helvetica", "sans-serif"}
+input {  font-size: 9pt; font-family: "Arial", "Helvetica", "sans-serif", "Verdana"}
+select {  font-size: 9pt; font-family: "Arial", "Helvetica", "sans-serif", "Verdana"}
+textarea {  font-size: 9pt; font-family: "Arial", "Helvetica", "sans-serif", "Verdana"}
+button {  font-size: 9pt; font-family: "Arial", "Helvetica", "sans-serif", "Verdana"}
+.checkbox {  height: 15px}
+a:link {  color: #0000CC;}
+a:visited {  color: #0000CC;} 
+a:hover {  text-decoration: underline; color: #FF3300}
+
+td.topTab_Line {border-bottom:solid #000000 1px; font-size: 11px; font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; color: #0000FF; font-weight: bold}
+td.topTab_bg {background-color:#cccccc; font-size: 11px; font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; color: #000000}
+td.topTab_bg a:link {  text-decoration: none; color: #0000FF; text-decoration: none}
+td.topTab_bg a:visited {  text-decoration: none; color: #0000FF}
+td.topTab_bg a:hover { color: #FF0000; text-decoration: none}
+td.topTab_a {color: #E80000; font-weight: bold; text-align: center; background-color:#FFCC33; border-top:solid #000000 1px; font-size: 11px; font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; background-image: url(../Images/buttonBg_a.gif)}
+td.topTab_a a:link {  color: #E80000; text-decoration: none}
+td.topTab_a a:visited {  color: #E80000; text-decoration: none}
+td.topTab_a a:hover { color: #0000FF; text-decoration: none}
+td.topTab_b {background-color:#FFF8C2; border-top:solid #000000 1px; border-bottom:solid #000000 1px; font-size: 11px; font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; color: #000000; font-weight: bold; text-align: center;}
+td.topTab_b a:link {  text-decoration: none; color: #0000FF; text-decoration: none}
+td.topTab_b a:visited {  text-decoration: none; color: #0000FF}
+td.topTab_b a:hover { color: #E80000; text-decoration: none}
+.topbar { font-size: 11px; font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; color: #000000; font-weight: bold}
+.topbar a:link {  text-decoration: none; color: #000000}
+.topbar a:visited {  text-decoration: none; color: #000000}
+.topbar a:hover { color: #0000FF; text-decoration: none}
+.header { font-size: 12px; font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-weight: bold}
+.text {  font-size: 13px; font-family: "Verdana", "Arial", "Helvetica", "sans-serif"}
+.font12pxLine {  font-size: 12px; line-height: 15px}
+.font13px {  font-size: 13px}
+.font14px {  font-size: 14px}
+.font14pxLine {  font-size: 14px; line-height: 20px}
+.Input {  background-color: #FFFFFF; height: 20px}
+.select {  height: 20px}
+.button {  font-size: 9pt; height: 20px; border-width: 1px; padding-top: 1px}
+.list {  line-height: 20px}
+.list a:link {  text-decoration: underline}
+.list a:visited {  text-decoration: underline}
+.list a:hover {  text-decoration: underline}
+.imgButton {background-color:#dfdfdf; }
+.up {border-top: 1px #ffffff solid;  border-left: 1px #ffffff solid; border-right: 1px #999999 solid; border-bottom: 1px #999999 solid ; cursor: hand; color: #FF0000}
+.down {border-top: 1px #999999 solid;  border-left: 1px #999999 solid; border-right: 1px #ffffff solid; border-bottom: 1px #ffffff solid; cursor: hand; color: #0033FF}
+.help {  cursor: help}
+table.grayBorder {border-width: 1px;border-collapse:collapse;border:none;border-top:solid #999999 1px;border-left:solid #999999 1px;border-bottom:solid #999999 1px;border-right:solid #999999 1px;}
+td.headerGrayBg {background-color:#CCCCCC; border-bottom:solid #999999 1px;}
+td.ProductClassBg {background-color:#F4F4F4;}
+td.BgF4 {background-color:#F4F4F4;}
+td.grayLine1 {background-color:#999999;}
+td.grayLine2 {border-bottom:solid #CCCCCC 1px;}
+td.grayBg1 {background-color:#CCCCCC;}
+td.grayBg2 {background-color:#F7F7F7;}
+.td0 {  padding-top: 3px}
+.td1 {  padding-top: 2px}
+td.headLeft { background-color: #999999; color: #ffffff; font-family: "Arial", "Helvetica", "sans-serif"; font-size: 9pt; text-align: left; border: 1px outset}
+td.headCenter { background-color: #999999; color: #ffffff; font-family: "Arial", "Helvetica", "sans-serif"; font-size: 9pt; text-align: center; ; border: 1px outset}
+td.headRight { background-color: #999999; color: #ffffff; font-family: "Arial", "Helvetica", "sans-serif"; font-size: 9pt; text-align: right; border: 1px outset}
+.headBold { background-color: #999999; color: #ffffff; font-family: Arial,Helvetica,sans-serif; font-size: 9pt; font-weight: bold; }
+.textBold { background-color: #CCCCCC; color: #000000; font-family: Arial,Helvetica,sans-serif; font-size: 9pt; font-weight: bold; }
+.textNoLink { font-family: Arial,Helvetica,sans-serif; font-size: 9pt; text-decoration: none; }
+td.textLeft { color: #000000; font-family: Arial,Helvetica,sans-serif; font-size: 9pt; text-align: left; }
+td.textCenter { color: #000000; font-family: Arial,Helvetica,sans-serif; font-size: 9pt; text-align: center; }
+td.textRight { color: #000000; font-family: Arial,Helvetica,sans-serif; font-size: 9pt; text-align: right; }
+tr.dark { background-color: #F0FFF0; color: #00008B; font-family: Arial,Helvetica,sans-serif; font-size: 9pt;}
+tr.light { background-color: #FAF0E6; color: #00008B; font-family: Arial,Helvetica,sans-serif; font-size: 9pt;}
+
+tr.headline { background-color: #87CEFA; color: #00008B; font-family: Arial,Helvetica,sans-serif; font-size: 9pt;}
+
+body{background-color: #F0F8FF; font-size: 14px}
+td {font-size: 12px}
+.css14 {font-size: 14px}
+.css12 {font-size: 12px}
+.font1 {  font-size: 9pt}
+.boder1 {  border: 1px B5B8CB solid; height: 15px}
+.xiala {  height: 15px; border: B5B8CB; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; background-color: E0E3EC}
+.button1 {  height: 20px; border: 1px B5B8CB solid; background-color: #FFFFFF; top: 2px; clip:  rect(  1px ); font-size: 9pt; margin-top: 2px; margin-bottom: 1px; padding-top: 2px; padding-bottom: 1px}
+.ccs {  border: 1px #A8C8EC solid}
+.ccs1 {  border: 2px #A8C8EC groove}
+.ccs2 {  border: 1px #A8C8EC solid; font-size: 12px; background-color: #EFEFEF}
+.ccs3 {  background-color: #D2E6EE; border: 1px solid; border-color: #A8C8EC #A8C8EC #99CCFF}
+

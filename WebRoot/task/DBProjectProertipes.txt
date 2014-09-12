@@ -1,0 +1,60 @@
+//DBUrl = jdbc:oracle:thin:@localhost:1521:orcl
+//DBUser = nms
+//DBPwd =  webnms
+DBUrl = jdbc:mysql://localhost/publicnms?user=root&password=root&useUnicode=true&&characterEncoding=gbk&autoReconnect=true
+DBName = publicnms
+DBUser = root
+DBPwd =  root
+maxconn = 1000
+minconn = 50
+connectCheckOutTimeout = 300000
+connectUseTimeout = 360
+connectUseCount = 500
+dbtype = mysql
+
+DBUrl_sms = jdbc:oracle:thin:@10.217.96.16:1521:szsyd
+DBUser_sms = dbo
+DBPwd_sms =  wmzjhxky
+SendFlag = 1
+TFTPserver = 10.10.152.72
+Reporttime = 1
+DayReporTime = 1
+mailaddr=songxl
+mailpassword=54255425
+mailsmtp=221.214.12.238
+DJFilePath=d:/djtts
+grapesip=10.10.152.30
+grapespath=E:/swewas/grapes
+subdir=02,05,08
+filesum=2,1,1
+filesize=1
+ip=21.40.3.21
+port=8823
+
+radarip=10.10.152.30
+radarpath=E:/swewas/radar
+radarsubdir=CR,ET
+radarinterval=20,20
+radarfilesize=1
+
+plotip=10.10.152.30
+plotpath=E:/surfaceJM/plot
+plotinterval=2
+plotfilesize=1
+
+mailaddr1=songxl@chinageneral.com
+mailpassword1=54255425
+network1=1,2
+network2=23,24
+network3=25,72,74,76
+network4=66,67
+
+#信息机数据库设置
+db_host=172.16.2.40
+db_name=CustomSMS
+db_pwd=SqlMsde@InfoxEie2000
+#信息机参数设置
+sourceAddr=106573016627
+serviceID=TSD0810101
+feeType=02
+feeCode=00

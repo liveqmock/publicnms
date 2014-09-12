@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+
+ #codeTextarea1 {width: 500px;height: 310px;}
+ #codeTextarea2 {width: 500px;height: 310px;}
+.textAreaWithLines{font-family: courier;border: 1px solid #ddd;}
+.textAreaWithLines textarea,.textAreaWithLines div{border: 0px;line-height: 120%;font-size: 13px;}
+.lineObj{color: #666;}

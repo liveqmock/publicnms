@@ -1,0 +1,38 @@
+ body {
+	font-family: 宋体, Arial, Helvetica, sans-serif;
+}
+
+td {
+	font-family: 宋体, Arial, Helvetica, sans-serif;
+}
+
+th {
+	font-family: 宋体, Arial, Helvetica, sans-serif;
+}
+.layout_title {
+	font-family:宋体, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+	text-align: center;
+}
+.left_border {
+	background-color: #FFFFFF;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #03493c;
+	border-left-color: #03493c;
+	padding:0 10px;
+}
+.right_border {
+	background-color: #FFFFFF;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #737272;
+	border-left-color: #737272;
+	padding:0 10px;
+}

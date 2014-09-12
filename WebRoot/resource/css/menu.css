@@ -1,0 +1,74 @@
+.p9{  font-family: "宋体"; font-size: 9pt; }
+body {  font-family: "宋体"; font-size: 9pt; margin-top: 0px; margin-left: 0px; margin-right: 0px}
+UNKNOWN {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A:link {
+	TEXT-DECORATION: none
+}
+BODY {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: "宋体"; TEXT-DECORATION: none
+}
+TR {
+	FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+TD {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+FORM {
+	FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+.black {
+	FONT-SIZE: 9pt; COLOR: #000000
+}
+.white {
+	FONT-SIZE: 9pt; COLOR: #ffffff
+}
+.red {
+	FONT-SIZE: 9pt; COLOR: #ff0000
+}
+.green {
+	FONT-SIZE: 9pt; COLOR: #009900
+}
+.blue {
+	FONT-SIZE: 9pt; COLOR: #0000ff
+}
+.bg1 {
+	FONT-SIZE: 9pt; COLOR: #ffffff
+}
+.gray {
+	FONT-SIZE: 9pt; COLOR: #666666
+}
+.row {
+	LINE-HEIGHT: 15pt
+}
+.bottom {
+	BORDER-RIGHT: #665b8e 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #ffffff 1px solid; COLOR: #000000; BORDER-BOTTOM: #665b8e 1px solid; FONT-FAMILY: "宋体"; HEIGHT: 18px; BACKGROUND-COLOR: #cccccc
+}
+.editbox1 {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: 宋体; HEIGHT: 18px; BACKGROUND-COLOR: #dbdbdb
+}
+.editbox2 {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-SIZE: 9pt; PADDING-BOTTOM: 1px; CURSOR: text; COLOR: #000000; PADDING-TOP: 1px; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #dbdbdb
+}
+.size {
+	FONT-SIZE: 9px; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"
+}
+A.yellow:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.yellow:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.yellow:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.yellow:hover {
+	COLOR: #ffff33; TEXT-DECORATION: none
+}

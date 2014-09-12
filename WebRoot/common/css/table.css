@@ -1,0 +1,58 @@
+.header {
+	background: #a5e5aa url(../images/ui/hd-bg.gif) repeat-x scroll 0pt;
+	border: 0pt none;
+	color: #FFF;
+	margin: 0;
+	height: 22px;
+}
+
+body {
+	margin-left: 4px;
+	margin-top: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+}
+
+#col {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.STYLE1 {
+	font-size: 12px
+}
+
+.STYLE3 {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.STYLE4 {
+	color: #03515d;
+	font-size: 12px;
+}
+
+.header h1 {
+	font-size: 14px;
+	line-height: 21px;
+	padding: 0 2px;
+}
+
+.datalist {
+	border: 1px solid #007108; /* 表格边框 */
+	font-family: Arial;
+	border-collapse: collapse; /* 边框重叠 */
+	background-color: # #B0C4DE; /* 表格背景色 */
+	font-size: 14px;
+}
+
+#main {
+	width: 96%;
+	line-height: 1.8;
+	margin: auto;
+	border: 1px #ccc dashed;
+	text-align: left;
+	text-indent: 2em;
+}

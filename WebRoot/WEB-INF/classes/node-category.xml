@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="gb2312"?>
+ <category_detail>
+   <category id="1">
+     <cn_name>路由器</cn_name>
+     <en_name>net_router</en_name>
+     <topo_image>router.png</topo_image>
+     <lost_image>router_lost.png</lost_image>
+     <alarm_image>router-alarm.gif</alarm_image>
+   </category>
+   <category id="2">
+     <cn_name>路由交换机</cn_name>
+     <en_name>net_switch_router</en_name>
+     <topo_image>router.png</topo_image>
+     <lost_image>switch_with_route_lost.png</lost_image>
+     <alarm_image>router-alarm.gif</alarm_image>
+   </category>
+   <category id="3">
+     <cn_name>交换机</cn_name>
+     <en_name>net_switch</en_name>
+     <topo_image>switch.png</topo_image>
+     <lost_image>switch_lost.png</lost_image>
+     <alarm_image>switch-alarm.gif</alarm_image>
+   </category>
+   <category id="4">
+     <cn_name>服务器</cn_name>
+     <en_name>net_server</en_name>
+     <topo_image>server.gif</topo_image>
+     <lost_image>server_lost.gif</lost_image>
+     <alarm_image>server_alarm.gif</alarm_image>
+   </category>
+   <category id="5">
+     <cn_name>打印机</cn_name>
+     <en_name>printer</en_name>
+     <topo_image>printer.png</topo_image>
+     <lost_image>printer_lost.png</lost_image>
+     <alarm_image>printer.png</alarm_image>
+   </category>
+   <category id="7">
+     <cn_name>无线路由器</cn_name>
+     <en_name>net_wireless</en_name>
+     <topo_image>wireless.png</topo_image>
+     <lost_image>wireless_lost.png</lost_image>
+     <alarm_image>wireless.png</alarm_image>
+   </category>
+  <category id="8">
+     <cn_name>防火墙</cn_name>
+     <en_name>net_firewall</en_name>
+     <topo_image>firewall.gif</topo_image>
+     <lost_image>firewall_lost.gif</lost_image>
+     <alarm_image>firewall.gif</alarm_image>
+   </category>
+  <category id="9">
+     <cn_name>ATM</cn_name>
+     <en_name>net_atm</en_name>
+     <topo_image>atm.gif</topo_image>
+     <lost_image>atm.gif</lost_image>
+     <alarm_image>atm_alarm.gif</alarm_image>
+   </category>
+   <category id="10">
+     <cn_name>安全网关</cn_name>
+     <en_name>net_gateway</en_name>
+     <topo_image>gateway.gif</topo_image>
+     <lost_image>gateway.gif</lost_image>
+     <alarm_image>gateway_alarm.gif</alarm_image>
+   </category>
+   <category id="11">
+     <cn_name>F5</cn_name>
+     <en_name>net_f5</en_name>
+     <topo_image>f5.gif</topo_image>
+     <lost_image>f5.gif</lost_image>
+     <alarm_image>f5_alarm.gif</alarm_image>
+   </category>
+   <category id="12">
+     <cn_name>vpn</cn_name>
+     <en_name>net_vpn</en_name>
+     <topo_image>vpn.gif</topo_image>
+     <lost_image>vpn.gif</lost_image>
+     <alarm_image>vpn_alarm.gif</alarm_image>
+   </category>
+   <category id="13">
+     <cn_name>CMTS</cn_name>
+     <en_name>net_cmts</en_name>
+     <topo_image>cmts.gif</topo_image>
+     <lost_image>cmts.gif</lost_image>
+     <alarm_image>cmts_alarm.gif</alarm_image>
+   </category>
+   <category id="14">
+     <cn_name>存储</cn_name>
+     <en_name>net_storage</en_name>
+     <topo_image>storage.gif</topo_image>
+     <lost_image>storage.gif</lost_image>
+     <alarm_image>storage_alarm.gif</alarm_image>
+   </category>
+   <category id="15">
+     <cn_name>虚拟化</cn_name>
+     <en_name>net_virtual</en_name>
+     <topo_image>virtual.gif</topo_image>
+     <lost_image>virtual.gif</lost_image>
+     <alarm_image>virtual_alarm.gif</alarm_image>
+   </category>
+   <category id="50">
+     <cn_name>IP地址</cn_name>
+     <en_name>ip_node</en_name>
+     <topo_image>terminal.gif</topo_image>
+     <lost_image>terminal_lost.gif</lost_image>
+     <alarm_image>terminal_alarm.gif</alarm_image>
+   </category>
+   <category id="51">
+     <cn_name>Tomcat</cn_name>
+     <en_name>tomcat</en_name>
+     <topo_image>tomcat.gif</topo_image>
+     <lost_image>tomcat_lost.gif</lost_image>
+     <alarm_image>tomcat_alarm.gif</alarm_image>
+   </category>
+   <category id="52">
+     <cn_name>MySQL</cn_name>
+     <en_name>mysql</en_name>
+     <topo_image>mysql.gif</topo_image>
+     <lost_image>mysql_lost.gif</lost_image>
+     <alarm_image>mysql_alarm.gif</alarm_image>
+   </category>
+   <category id="53">
+     <cn_name>Oracle</cn_name>
+     <en_name>oracle</en_name>
+     <topo_image>oracle.gif</topo_image>
+     <lost_image>oracle_lost.gif</lost_image>
+     <alarm_image>oracle_alarm.gif</alarm_image>
+   </category>
+   <category id="54">
+     <cn_name>SQL-Server</cn_name>
+     <en_name>sql-server</en_name>
+     <topo_image>mssql.gif</topo_image>
+     <lost_image>mssql_lost.gif</lost_image>
+     <alarm_image>mssql_alarm.gif</alarm_image>
+   </category>
+   <category id="55">
+     <cn_name>Sybase</cn_name>
+     <en_name>sybase</en_name>
+     <topo_image>sybase.gif</topo_image>
+     <lost_image>sybase_lost.gif</lost_image>
+     <alarm_image>sybase_alarm.gif</alarm_image>
+   </category>
+   <category id="56">
+     <cn_name>mail</cn_name>
+     <en_name>mail</en_name>
+     <topo_image>mail.gif</topo_image>
+     <lost_image>mail_lost.gif</lost_image>
+     <alarm_image>mail_alarm.gif</alarm_image>
+   </category>
+   <category id="57">
+     <cn_name>web</cn_name>
+     <en_name>wes</en_name>
+     <topo_image>web.gif</topo_image>
+     <lost_image>web_lost.gif</lost_image>
+     <alarm_image>web_alarm.gif</alarm_image>
+   </category>
+   <category id="58">
+     <cn_name>ftp</cn_name>
+     <en_name>ftp</en_name>
+     <topo_image>ftp.gif</topo_image>
+     <lost_image>ftp_lost.gif</lost_image>
+     <alarm_image>ftp_alarm.gif</alarm_image>
+   </category>
+   <category id="59">
+     <cn_name>DB2</cn_name>
+     <en_name>db2</en_name>
+     <topo_image>db2.gif</topo_image>
+     <lost_image>db2_lost.gif</lost_image>
+     <alarm_image>db2_alarm.gif</alarm_image>
+   </category>
+<category id="60">
+     <cn_name>Informix</cn_name>
+     <en_name>informix</en_name>
+     <topo_image>informix.gif</topo_image>
+     <lost_image>informix_lost.gif</lost_image>
+     <alarm_image>informix_alarm.gif</alarm_image>
+   </category>
+<category id="70">
+     <cn_name>JBoss</cn_name>
+     <en_name>jboss</en_name>
+     <topo_image>jboss.gif</topo_image>
+     <lost_image>jboss_lost.gif</lost_image>
+     <alarm_image>jboss_alarm.gif</alarm_image>
+   </category>
+  <category id="72">
+     <cn_name>Resin</cn_name>
+     <en_name>resin</en_name>
+     <topo_image>resin.gif</topo_image>
+     <lost_image>resin_lost.gif</lost_image>
+     <alarm_image>resin_alarm.gif</alarm_image>
+   </category>  
+   <category id="101">
+     <cn_name>UPS</cn_name>
+     <en_name>ups</en_name>
+     <topo_image>ups.jpg</topo_image>
+     <lost_image>ups_lost.jpg</lost_image>
+     <alarm_image>ups_alarm.gif</alarm_image>
+   </category>   
+   <category id="61">
+     <cn_name>MQ</cn_name>
+     <en_name>mqs</en_name>
+     <topo_image>mq.gif</topo_image>
+     <lost_image>mq_lost.jpg</lost_image>
+     <alarm_image>mq_alarm.gif</alarm_image>
+   </category>
+   <category id="62">
+     <cn_name>Domino</cn_name>
+     <en_name>domino</en_name>
+     <topo_image>domino.gif</topo_image>
+     <lost_image>domino_lost.jpg</lost_image>
+     <alarm_image>domino_alarm.gif</alarm_image>
+   </category>
+   <category id="63">
+     <cn_name>WAS</cn_name>
+     <en_name>was</en_name>
+     <topo_image>was_32.gif</topo_image>
+     <lost_image>was_lost.jpg</lost_image>
+     <alarm_image>was_32_alarm.gif</alarm_image>
+   </category>
+   <category id="64">
+     <cn_name>Weblogic</cn_name>
+     <en_name>weblogic</en_name>
+     <topo_image>bea32.gif</topo_image>
+     <lost_image>weblogic_lost.jpg</lost_image>
+     <alarm_image>bea32alarm.gif</alarm_image>
+   </category>
+   <category id="65">
+     <cn_name>CICS</cn_name>
+     <en_name>cics</en_name>
+     <topo_image>cics.jpg</topo_image>
+     <lost_image>cics_lost.jpg</lost_image>
+     <alarm_image>cics_alarm.gif</alarm_image>
+   </category>
+   <category id="66">
+     <cn_name>Apache</cn_name>
+     <en_name>apache</en_name>
+     <topo_image>apache.jpg</topo_image>
+     <lost_image>apache_lost.jpg</lost_image>
+     <alarm_image>apache_alarm.gif</alarm_image>
+   </category>
+   <category id="67">
+     <cn_name>IIS</cn_name>
+     <en_name>iis</en_name>
+     <topo_image>iis.gif</topo_image>
+     <lost_image>iis_lost.jpg</lost_image>
+     <alarm_image>iis_alarm.gif</alarm_image>
+   </category>
+   <category id="68">
+     <cn_name>Socket</cn_name>
+     <en_name>socket</en_name>
+     <topo_image>socket.gif</topo_image>
+     <lost_image>socket_lost.jpg</lost_image>
+     <alarm_image>socket_alarm.gif</alarm_image>
+   </category>
+   <category id="69">
+     <cn_name>主机进程</cn_name>
+     <en_name>process</en_name>
+     <topo_image>process.gif</topo_image>
+     <lost_image>process_lost.gif</lost_image>
+     <alarm_image>process_alarm.gif</alarm_image>
+   </category>
+   <category id="71">
+     <cn_name>Tuxedo</cn_name>
+     <en_name>tuxedo</en_name>
+     <topo_image>tuxedo.gif</topo_image>
+     <lost_image>tuxedo.gif</lost_image>
+     <alarm_image>tuxedo_alarm.gif</alarm_image>
+   </category>
+   <category id="80">
+     <cn_name>业务</cn_name>
+     <en_name>bussiness</en_name>
+     <topo_image>bussiness.gif</topo_image>
+     <lost_image>bussiness_lost.gif</lost_image>
+     <alarm_image>bussiness_alarm.gif</alarm_image>
+   </category>
+   <category id="81">
+     <cn_name>业务接口</cn_name>
+     <en_name>interface</en_name>
+     <topo_image>interface.gif</topo_image>
+     <lost_image>interface_lost.gif</lost_image>
+     <alarm_image>interface_alarm.gif</alarm_image>
+   </category>
+   <category id="91">
+     <cn_name>GGSN</cn_name>
+     <en_name>ggsn</en_name>
+     <topo_image>GGSN.png</topo_image>
+     <lost_image>GGSN.png</lost_image>
+     <alarm_image>GGSN.png</alarm_image>
+   </category>
+   <category id="92">
+     <cn_name>SGSN</cn_name>
+     <en_name>sgsn</en_name>
+     <topo_image>SGSN.png</topo_image>
+     <lost_image>SGSN.png</lost_image>
+     <alarm_image>SGSN.png</alarm_image>
+   </category>
+   <category id="93">
+     <cn_name>DHCP</cn_name>
+     <en_name>dhcp</en_name>
+     <topo_image>dhcp.gif</topo_image>
+     <lost_image>dhcp_lost.gif</lost_image>
+     <alarm_image>dhcp_alarm.gif</alarm_image>
+   </category>
+   <category id="94">
+     <cn_name>tftp</cn_name>
+     <en_name>tftp</en_name>
+     <topo_image>tftp.gif</topo_image>
+     <lost_image>tftp_lost.gif</lost_image>
+     <alarm_image>tftp_alarm.gif</alarm_image>
+   </category>
+   <category id="88">
+     <cn_name>WEB虚拟登陆</cn_name>
+     <en_name>wbl</en_name>
+     <topo_image>web.gif</topo_image>
+     <lost_image>web_lost.gif</lost_image>
+     <alarm_image>web_alarm.gif</alarm_image>
+   </category>
+   <category id="1000">
+     <cn_name></cn_name>
+     <en_name></en_name>
+     <topo_image></topo_image>
+     <alarm_image></alarm_image>
+   </category>
+ </category_detail>

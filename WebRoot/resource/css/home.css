@@ -1,0 +1,100 @@
+a:link { font-size: 12pt; text-decoration: none; color: blue; }
+a:hover { font-size: 12pt; text-decoration: none  ; color: blue; }
+a:active { font-size: 12pt; text-decoration: none ; color: blue; }
+a:visited { font-size: 12pt; text-decoration: none ; color: blue; }
+div {font: small-caps 600 12pts/18pts ºÚÌå; }
+#bodydiv {
+	position:absolute; z-index:1; top:0px; left:150px; width:620; height:640;
+	background-color:#E6E6FA;
+}
+
+.network {/*ÍøÂç*/
+	position:absolute; z-index:999; top:10px; left:0px; width:200px; height:130px;
+	background-color: #F0FFF0; background-image:url(../image/home/network.gif); 
+	cursor:hand;
+}
+.network_red {/*ÍøÂç*/
+	position:absolute; z-index:999; top:10px; left:0px; width:200px; height:130px;
+	background-color: #F0A0F0; background-image:url(../image/home/network.gif); 
+	cursor:hand;
+}
+.network_brown {/*ÍøÂç*/
+	position:absolute; z-index:999; top:10px; left:0px; width:200px; height:130px;
+	background-color: #FFFF33; background-image:url(../image/home/network.gif); 
+	cursor:hand;
+}
+.governclient {/*»ú¹Ø¿Í»§¶Ë*/
+	position:absolute; z-index:999; top:150px; left:420px; width:200px; height:130px;
+	background-color: #F0FFF0; background-image:url(../image/home/governclient.gif); 
+	cursor:hand;
+}
+.governclient_red {/*»ú¹Ø¿Í»§¶Ë*/
+	position:absolute; z-index:999; top:150px; left:420px; width:200px; height:130px;
+	background-color: #F0A0F0; background-image:url(../image/home/governclient.gif); 
+	cursor:hand;
+}
+
+.server {/*·þÎñÆ÷*/
+	position:absolute; z-index:999; top:10px; left:210px; width:200px; height:130px;
+	background-color: #F0FFF0; background-image:url(../image/home/server.gif); 
+	cursor:hand;
+}
+.server_red {/*·þÎñÆ÷*/
+	position:absolute; z-index:999; top:10px; left:210px; width:200px; height:130px;
+	background-color: #F0A0F0; background-image:url(../image/home/server_red.gif); 
+	cursor:hand;
+}
+.server_brown {/*·þÎñÆ÷*/
+	position:absolute; z-index:999; top:10px; left:210px; width:200px; height:130px;
+	background-color: #FFFF33; background-image:url(../image/home/server_red.gif); 
+	cursor:hand;
+}
+.virus {/*²¡¶¾*/
+	position:absolute; z-index:999; top:150px; left:210px; width:200px; height:130px;
+	background-color: #F0FFF0; background-image:url(../image/home/virus.gif); 
+	cursor:hand;
+}
+.virus_red {/*²¡¶¾*/
+	position:absolute; z-index:999; top:150px; left:210px; width:200px; height:130px;
+	background-color: #F0FFF0; background-image:url(../image/home/virus.gif); 
+	cursor:hand;
+}
+.virus_brown {/*²¡¶¾*/
+	position:absolute; z-index:999; top:150px; left:210px; width:200px; height:130px;
+	background-color: #FFFF33; background-image:url(../image/home/virus.gif); 
+	cursor:hand;
+}
+.internetstatus {/*Internet×´Ì¬*/
+	position:absolute; z-index:999; top:150px; left:0px; width:200px; height:130px;
+	background-color: #F0FFF0; background-image:url(../image/home/internet.gif); 
+	cursor:hand;
+}
+.internetstatus_red {/*Internet×´Ì¬*/
+	position:absolute; z-index:999; top:150px; left:0px; width:200px; height:130px;
+	background-color: #F0A0F0; background-image:url(../image/home/internet.gif); 
+	cursor:hand;
+}
+
+
+.oastatus {/*OA×´Ì¬*/
+	position:absolute; z-index:999; top:10px; left:420px; width:200px; height:130px; 
+	background-color: #F0FFF0; background-image:url(../image/home/oastatus.gif); 
+	cursor:hand;
+}
+.oastatus_red {/*OA×´Ì¬*/
+	position:absolute; z-index:999; top:10px; left:420px; width:200px; height:130px; 
+	background-color: #F0A0F0; background-image:url(../image/home/oastatus.gif); 
+	cursor:hand;
+}
+
+.doorsystem {
+	text-align:center; vertical-align:bottom;overflow: hidden;
+	position:absolute; z-index:999; top:300px; left:0px; width:620; height:230px; 
+	background-color: #99CC66;
+}
+
+.roomsystem {
+	text-align:center; vertical-align:bottom;overflow: hidden;
+	position:absolute; z-index:999; top:570px; left:0px; width:620; height:150px; 
+	background-color: #99CC66;
+}

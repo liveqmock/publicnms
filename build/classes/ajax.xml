@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config> 
+ <manager>
+    <name>treeAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.TreeAjaxManager</class>
+  </manager>
+  <!--=================== system ======================-->
+  <manager>
+    <name>serverAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.ServerAjaxManager</class>
+  </manager>
+   <manager>
+    <name>oracleAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.OracleAjaxManager</class>
+  </manager>
+  <manager>
+    <name>networkDeviceAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.NetworkDeviceAjaxManager</class>
+  </manager>
+  
+  
+    <manager>
+    <name>systemConfigAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.SystemConfigAjaxManager</class>
+  </manager> 
+   
+   <manager>
+    <name>PortConfigAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.PortConfigAjaxManager</class>
+  </manager>	
+  <manager>
+    <name>vpnAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.VpnAjaxManager</class>
+  </manager>
+  <manager>
+    <name>getEventListAjaxManager</name>
+    <class>com.afunms.application.ajaxManager.GetEventListAjaxManager</class>
+  </manager>
+ <!--=================== IP配置 ======================-->
+ 
+  <manager>
+	<name>bpmnode</name>
+    <class>com.afunms.system.manage.NodeManager</class>
+  </manager>
+   <manager>
+	<name>netCfgFileAjaxManager</name>
+    <class>com.afunms.automation.ajaxManager.NetCfgFileAjaxManager</class>
+  </manager>
+    <manager>
+	<name>automationTreeAjaxManager</name>
+    <class>com.afunms.automation.ajaxManager.AutomationTreeAjaxManager</class>
+  </manager>
+</config>  

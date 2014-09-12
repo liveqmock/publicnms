@@ -1,0 +1,108 @@
+																						 show run
+Building configuration...
+
+Current configuration : 1111 bytes
+!
+version 12.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname r2
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$NQ/C$OYh6umTLZfgQZKQWNpJtW.
+enable password r22
+!
+no aaa new-model
+memory-size iomem 5
+no ip routing
+!
+!
+no ip cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+! 
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip route-cache
+ speed auto
+ half-duplex
+ no cdp enable
+ no mop enabled
+!
+interface Serial1/0
+ ip address 192.168.1.242 255.255.255.0
+ no ip route-cache
+ serial restart-delay 0
+!
+interface Serial1/1
+ no ip address
+ no ip route-cache
+ shutdown
+ serial restart-delay 0
+!
+interface Serial1/2
+ no ip address
+ no ip route-cache
+ shutdown
+ serial restart-delay 0
+interface Serial1/3
+ no ip address
+ no ip route-cache
+ shutdown
+ serial restart-delay 0
+!
+ip http server
+no ip http secure-server
+!
+!
+!
+snmp-server community public RO
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+line aux 0
+line vty 0 4
+ password r22
+ login
+!
+no process cpu extended
+no process cpu autoprofile hog
+!
+end
+
+r2#
+
+																						

@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+	 * 数字代表nms_func表中 一级菜单的ID
+	 * 1为首页
+	 * 9为资源
+	 * 31为告警
+	 * 43为报表
+	 * 47为应用
+	 * 70为系统管理
+	 * 178为自动化
+	 * 224为服务质量
+	 * 135为3D机房
+	  * 330为设备管理
+	 * 	map.put("topology", "9");
+		map.put("alarm", "31");
+		map.put("capreport", "43");
+		map.put("application", "47");
+		map.put("config", "70");
+		map.put("portconfig", "9");
+		map.put("ipmacchange", "9");
+		map.put("ipmacbase", "9");
+		map.put("ipmac", "9");
+		map.put("detail", "9");
+		map.put("panel", "9");
+		map.put("system", "70");
+		map.put("sysset", "70");
+		map.put("common", "1");
+	 */
+	 
+
+
+		map.put("diskconfig", "1");
+		map.put("db", "39");
+		map.put("flex", "1");
+		map.put("jianshi", "1");
+
+ -->
+<menu-config> 
+
+<menu>
+  <filename>diskconfig</filename>
+  <menuId>9</menuId>
+</menu>
+<menu>
+  <filename>vpntelnet</filename>
+  <menuId>9</menuId>
+</menu>
+    <menu>
+  <filename>databaseflex</filename>
+  <menuId>47</menuId>
+  </menu>
+<menu>
+  <filename>flex</filename>
+  <menuId>9</menuId>
+</menu>
+<menu>
+  <filename>jianshi</filename>
+  <menuId>9</menuId>
+</menu>
+<menu>
+  <filename>equip</filename>
+  <menuId>9</menuId>
+</menu>
+<menu>
+  <filename>business</filename>
+  <menuId>9</menuId>
+</menu>
+<menu>
+  <filename>common</filename>
+  <menuId>1</menuId>
+</menu>
+<menu>
+  <filename>topology</filename>
+  <menuId>9</menuId>
+</menu>
+<menu>
+  <filename>portconfig</filename>
+  <menuId>9</menuId>
+ </menu>
+ <menu>
+  <filename>ipmacchange</filename>
+  <menuId>9</menuId>
+  </menu>
+  <menu>
+  <filename>ipmacbase</filename>
+  <menuId>9</menuId>
+  </menu>
+  <menu>
+  <filename>ipmac</filename>
+  <menuId>9</menuId>
+  </menu>
+  <menu>
+  <filename>detail</filename>
+  <menuId>9</menuId>
+  </menu>
+  <menu>
+  <filename>panel</filename>
+  <menuId>9</menuId>
+  </menu>
+<menu>
+  <filename>equip</filename>
+  <menuId>9</menuId>
+</menu>
+  <menu>
+  <filename>maclocate</filename>
+  <menuId>9</menuId>
+  </menu>
+  <menu>
+  <filename>ipdistrict</filename>
+  <menuId>9</menuId>
+  </menu>
+  <menu>
+  <filename>indicators</filename>
+  <menuId>9</menuId>
+  </menu>
+   <menu>
+  <filename>processgroup</filename>
+  <menuId>9</menuId>
+  </menu>
+  <menu>
+  <filename>hostservicegroup</filename>
+  <menuId>9</menuId>
+  </menu>
+   <menu>
+   <filename>vpn</filename>
+   <menuId>9</menuId>
+  </menu>
+  <menu>
+  <filename>alarm</filename>
+  <menuId>31</menuId>
+  </menu>
+  <menu>
+  <filename>capreport</filename>
+  <menuId>43</menuId>
+  </menu>
+  <menu>
+  <filename>application</filename>
+  <menuId>47</menuId>
+  </menu>
+  <menu>
+  <filename>ups</filename>
+  <menuId>47</menuId>
+  </menu>
+  <menu>
+   <filename>config</filename>
+  <menuId>70</menuId>
+  </menu>
+  <menu>
+   <filename>subconfigcat</filename>
+  <menuId>70</menuId>
+  </menu>
+  <menu>
+  <filename>system</filename>
+  <menuId>70</menuId>
+  </menu>
+  <menu>
+   <filename>sysset</filename>
+  <menuId>70</menuId>
+  </menu>
+    <menu>
+   <filename>ipdistrict</filename>
+  <menuId>9</menuId>
+  </menu>
+    <menu>
+   <filename>indicators</filename>
+  <menuId>9</menuId>
+  </menu>
+  <menu>
+   <filename>district</filename>
+  <menuId>9</menuId>
+  </menu>
+  <menu>
+   <filename>macconfig</filename>
+  <menuId>9</menuId>
+  </menu>
+  <menu>
+   <filename>fwtype</filename>
+  <menuId>70</menuId>
+  </menu>
+  <menu>
+   <filename>buscollecttype</filename>
+  <menuId>70</menuId>
+  </menu>
+  <menu>
+   <filename>business</filename>
+  <menuId>70</menuId>
+  </menu>
+  <menu>
+   <filename>district</filename>
+  <menuId>70</menuId>
+  </menu>
+  <menu>
+   <filename>vpntelnet</filename>
+  <menuId>178</menuId>
+  </menu>
+  <menu>
+   <filename>sla</filename>
+  <menuId>224</menuId>
+  </menu>
+  <menu>
+   <filename>ciscosla</filename>
+  <menuId>224</menuId>
+  </menu>
+  <menu>
+   <filename>slanodeprop</filename>
+  <menuId>224</menuId>
+  </menu>
+  <menu>
+   <filename>slaaudit</filename>
+  <menuId>224</menuId>
+  </menu>
+  <menu>
+  <filename>slaicmp</filename>
+  <menuId>224</menuId>
+  </menu>
+  <menu>
+  <filename>slaudpjitter</filename>
+  <menuId>224</menuId>
+  </menu>
+  <menu>
+  <filename>slaudp</filename>
+  <menuId>224</menuId>
+  </menu>
+  <menu>
+  <filename>slatcp</filename>
+  <menuId>224</menuId>
+  </menu>
+  <menu>
+   <filename>cabinetequipment</filename>
+  <menuId>135</menuId>
+  </menu>
+  <menu>
+   <filename>cabinetconfig</filename>
+  <menuId>135</menuId>
+  </menu>
+  <menu>
+   <filename>eqproom</filename>
+   <menuId>135</menuId>
+  </menu>
+  <menu>
+   <filename>cabinetreport</filename>
+   <menuId>135</menuId>
+  </menu>
+  <menu>
+   <filename>roomlaw</filename>
+   <menuId>135</menuId>
+  </menu>
+   <menu>
+   <filename>roomvideo</filename>
+   <menuId>135</menuId>
+  </menu>
+  <menu>
+   <filename>roomguest</filename>
+   <menuId>135</menuId>
+  </menu>
+  <menu>
+   <filename>equipmentreport</filename>
+   <menuId>135</menuId>
+  </menu>
+  <menu>
+   <filename>cabinetbsreport</filename>
+   <menuId>135</menuId>
+  </menu>
+  <menu>
+   <filename>machineUpAndDown</filename>
+   <menuId>178</menuId>
+  </menu>
+  <menu>
+   <filename>fdb</filename>
+   <menuId>9</menuId>
+  </menu>
+  <menu>
+   <filename>ipconfig</filename>
+   <menuId>275</menuId>
+  </menu>
+  <menu>
+     <filename>bussinessstorage</filename>
+   <menuId>275</menuId>
+  </menu>
+  <menu>
+     <filename>ipselect</filename>
+   <menuId>275</menuId>
+  </menu>
+  <menu>
+     <filename>bpm</filename>
+   <menuId>295</menuId>
+  </menu>
+  <menu>
+	<filename>schedule</filename>
+	<menuId>295</menuId>
+  </menu>
+   <menu>
+	<filename>device</filename>
+	<menuId>330</menuId>
+  </menu>
+  <menu>
+  <filename>automation</filename>
+  <menuId>178</menuId>
+</menu>
+</menu-config>  

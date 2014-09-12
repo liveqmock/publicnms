@@ -1,0 +1,103 @@
+<settings>
+	<background>
+		<alpha>100</alpha>
+		<border_alpha>0</border_alpha>
+	</background>
+	<plot_area><!-- PLOT AREA (the area between axes) -->
+		<color></color><!-- [#FFFFFF](hex color code) Separate color codes with comas for gradient -->
+		<alpha></alpha><!-- [0] (0 - 100) if you want it to be different than background color, use bigger than 0 value -->
+		<border_color></border_color><!-- [#000000] (hex color code) -->
+		<border_alpha></border_alpha><!-- [0] (0 - 100) -->
+		<margins><!-- plot area margins -->
+			<left>80</left><!-- [60](Number / Number%) -->
+			<top>20</top><!-- [60](Number / Number%) -->
+			<right>40</right><!-- [60](Number / Number%) -->
+			<bottom>60</bottom><!-- [80](Number / Number%) -->
+		</margins>
+	</plot_area>
+	<grid>
+		<category>
+			<dashed>1</dashed>
+		</category>
+		<value>
+			<dashed>1</dashed>
+		</value>
+	</grid>
+	<axes>
+		<category>
+			<width>1</width>
+			<color>E7E7E7</color>
+		</category>
+		<value>
+			<width>1</width>
+			<color>E7E7E7</color>
+		</value>
+	</axes>
+	<values>
+		<value>
+			<min>0</min>
+		</value>
+	</values>
+	<depth>20</depth>
+
+	<column>
+		<width>55</width>
+		<data_labels>
+			<![CDATA[{value}]]><!-- [] ({title} {value} {series} {percents} {start} {difference} {total}) You can format any data label: {title} will be replaced with real title, {value} - with value and so on. You can add your own text or html code too. -->
+		</data_labels>
+		<balloon_text>{title}: {value}</balloon_text>
+		<grow_time>2</grow_time>
+		<data_labels_position>inside</data_labels_position>
+		<data_labels_always_on>true</data_labels_always_on>
+		<data_labels_text_color>#000000</data_labels_text_color>
+		
+	</column>
+	
+	 <legend>                                                    <!-- LEGEND -->
+    <enabled></enabled>                                       <!-- [true] (true / false) -->
+    <x>120</x>                                                   <!-- [] (Number / Number% / !Number) if empty, will be equal to left margin -->
+    <y></y>                                                   <!-- [] (Number / Number% / !Number) if empty, will be below plot area -->
+    <width>400</width>                                        <!-- [] (Number / Number%) if empty, will be equal to plot area width -->
+    <max_columns></max_columns>                               <!-- [] (Number) the maximum number of columns in the legend -->    
+    <color></color>                                           <!-- [#FFFFFF] (hex color code) background color. Separate color codes with comas for gradient -->
+    <alpha></alpha>                                           <!-- [0] (0 - 100) background alpha -->
+    <border_color></border_color>                             <!-- [#000000] (hex color code) border color -->
+    <border_alpha></border_alpha>                             <!-- [0] (0 - 100) border alpha -->
+    <text_color></text_color>                                 <!-- [text_color] (hex color code) -->   
+    <text_size></text_size>                                   <!-- [text_size] (Number) -->
+    <spacing>5</spacing>                                      <!-- [10] (Number) vertical and horizontal gap between legend entries -->
+    <margins></margins>                                       <!-- [0] (Number) legend margins (space between legend border and legend entries, recommended to use only if legend border is visible or background color is different from chart area background color) -->
+    <reverse_order></reverse_order>                           <!-- [false] (true / false) whether to sort legend entries in a reverse order -->    
+    <align></align>                                           <!-- [left] (left / center / right) alignment of legend entries -->
+    <key>                                                     <!-- KEY (the color box near every legend entry) -->
+      <size></size>                                           <!-- [16] (Number) key size-->
+      <border_color></border_color>                           <!-- [] (hex color code) leave empty if you don't want to have border-->
+    </key>
+  </legend>  
+	<graphs>
+
+		<graph gid="0">
+			<title>当前流速</title>
+			<color>FF4500</color>
+			<alpha>70</alpha>
+		</graph>
+		<graph gid="1">
+			<title>最大流速</title>
+			<color>7FFF00</color>
+			<alpha>70</alpha>
+		</graph>
+		<graph gid="2">
+			<title>最小流速</title>
+			<color>0000FF</color>
+			<alpha>70</alpha>
+		</graph>	
+		<graph gid="3">
+			<title>平均流速</title>
+			<color>9999cc</color>
+			<alpha>70</alpha>
+		</graph>
+		
+
+	</graphs>
+
+</settings>

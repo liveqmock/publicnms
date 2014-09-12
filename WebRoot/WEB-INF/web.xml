@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+ <display-name>afunms</display-name>
+ <context-param>
+  <param-name>flex.class.path</param-name>
+  <param-value>/WEB-INF/flex/hotfixes,/WEB-INF/flex/jars</param-value>
+ </context-param>
+
+ <context-param>
+  <param-name>contextConfigLocation</param-name>
+  <param-value>classpath*:/applicationContext.xml</param-value>
+ </context-param>
+ 
+
+
+ <listener>
+  <listener-class>com.afunms.initialize.InitListener</listener-class>
+ </listener>
+
+ <servlet>
+  <servlet-name>RestletServlet</servlet-name>
+  <servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
+  <init-param>
+   <param-name>org.restlet.application</param-name>
+   <param-value>org.activiti.editor.rest.application.ActivitiRestApplication</param-value>
+  </init-param>
+ </servlet>
+
+ <servlet>
+  <servlet-name>MessageBrokerServlet</servlet-name>
+  <servlet-class>flex.messaging.MessageBrokerServlet</servlet-class>
+  <init-param>
+   <param-name>services.configuration.file</param-name>
+   <param-value>/WEB-INF/flex/services-config.xml</param-value>
+  </init-param>
+  <load-on-startup>1</load-on-startup>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>controller</servlet-name>
+  <servlet-class>com.afunms.initialize.Controller</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>ajax</servlet-name>
+  <servlet-class>com.afunms.initialize.AjaxController</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>artist</servlet-name>
+  <servlet-class>com.afunms.report.jfree.Artist</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>dwr-invoker</servlet-name>
+  <servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+  <init-param>
+   <param-name>debug</param-name>
+   <param-value>true</param-value>
+  </init-param>
+  <init-param>
+   <param-name>allowScriptTagRemoting</param-name>
+   <param-value>true</param-value>
+  </init-param>
+  <init-param>
+   <param-name>crossDomainSessionSecurity</param-name>
+   <param-value>false</param-value>
+  </init-param>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>bfapp</servlet-name>
+  <servlet-class>net.buffalo.web.servlet.ApplicationServlet</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>QueryServlet</servlet-name>
+  <servlet-class>com.afunms.query.QueryServlet</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>DBQueryServlet</servlet-name>
+  <servlet-class>com.afunms.query.DBQueryServlet</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>armChartServlet</servlet-name>
+  <servlet-class>com.afunms.chart.amchart.servlet.ArmChartServlet</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>questionTitleServlet</servlet-name>
+  <servlet-class>com.afunms.event.manage.servlet.QuestionTitleServlet</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>questionDetailServlet</servlet-name>
+  <servlet-class>com.afunms.event.manage.servlet.QuestionDetailServlet</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>SelectServlet</servlet-name>
+  <servlet-class>com.afunms.cabinet.model.SelectServlet</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>telnetLogin</servlet-name>
+  <servlet-class>com.afunms.servlet.TelnetLogin</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>telnetSendCommand</servlet-name>
+  <servlet-class>com.afunms.servlet.TelnetSendCommand</servlet-class>
+ </servlet>
+ 
+ <servlet>
+  <servlet-name>telnetEndSession</servlet-name>
+  <servlet-class>com.afunms.servlet.TelnetEndSession</servlet-class>
+ </servlet>
+ 
+ 
+ <servlet-mapping>
+  <servlet-name>default</servlet-name>
+  <url-pattern>/api/*</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>default</servlet-name>
+  <url-pattern>/editor/*</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>default</servlet-name>
+  <url-pattern>/explorer/*</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>default</servlet-name>
+  <url-pattern>/libs/*</url-pattern>
+ </servlet-mapping>
+ <!-- Catch all service requests -->
+ <servlet-mapping>
+  <servlet-name>RestletServlet</servlet-name>
+  <url-pattern>/service/*</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+  <servlet-name>MessageBrokerServlet</servlet-name>
+  <url-pattern>/messagebroker/*</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>dwr-invoker</servlet-name>
+  <url-pattern>/dwr/*</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>controller</servlet-name>
+  <url-pattern>*.do</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ajax</servlet-name>
+  <url-pattern>*.ajax</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>bfapp</servlet-name>
+  <url-pattern>/bfapp/*</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>QueryServlet</servlet-name>
+  <url-pattern>/QueryServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>DBQueryServlet</servlet-name>
+  <url-pattern>/DBQueryServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>SelectServlet</servlet-name>
+  <url-pattern>/select</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>armChartServlet</servlet-name>
+  <url-pattern>/armChartServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>artist</servlet-name>
+  <url-pattern>/artist</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>questionTitleServlet</servlet-name>
+  <url-pattern>/questionTitleServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>questionDetailServlet</servlet-name>
+  <url-pattern>/questionDetailServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>telnetLogin</servlet-name>
+  <url-pattern>/telnetLogin</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>telnetSendCommand</servlet-name>
+  <url-pattern>/telnetSendCommand</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>telnetEndSession</servlet-name>
+  <url-pattern>/telnetEndSession</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <session-config>
+  <session-timeout>1800</session-timeout>
+ </session-config>
+ 
+ 
+ <filter>
+  <filter-name>MainFilter</filter-name>
+  <filter-class>com.afunms.filter.MainFilter</filter-class>
+ </filter>
+  <filter-mapping>
+  <filter-name>MainFilter</filter-name>
+  <url-pattern>/*</url-pattern>
+ </filter-mapping>
+ 
+ <error-page>
+  <error-code>500</error-code>
+  <location>/common/error.jsp?errorcode=500</location>
+ </error-page>
+ 
+ <error-page>
+  <error-code>404</error-code>
+  <location>/common/error.jsp?errorcode=404</location>
+ </error-page>
+ 
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+ 
+</web-app>

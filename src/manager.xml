@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- =================== system ======================-->
+	<manager>
+		<name>syslog</name>
+		<class>com.afunms.system.manage.SysLogManager</class>
+	</manager>
+	<manager>
+		<name>role</name>
+		<class>com.afunms.system.manage.RoleManager</class>
+	</manager>
+	<manager>
+		<name>dept</name>
+		<class>com.afunms.system.manage.DepartmentManager</class>
+	</manager>
+	<manager>
+		<name>position</name>
+		<class>com.afunms.system.manage.PositionManager</class>
+	</manager>
+	<manager>
+		<name>user</name>
+		<class>com.afunms.system.manage.UserManager</class>
+	</manager>
+	<manager>
+		<name>menu</name>
+		<class>com.afunms.system.manage.MenuManager</class>
+	</manager>
+	<manager>
+		<name>admin</name>
+		<class>com.afunms.system.manage.AccreditManager</class>
+	</manager>
+	<manager>
+		<name>systemconfig</name>
+		<class>com.afunms.system.manage.SystemConifgManager</class>
+	</manager>
+	<manager>
+		<name>equip</name>
+		<class>com.afunms.system.manage.equipManager</class>
+	</manager>
+
+	<!-- =================== sysset ======================-->
+	<manager>
+		<name>devicetype</name>
+		<class>com.afunms.sysset.manage.DeviceTypeManager</class>
+	</manager>
+	<manager>
+		<name>service</name>
+		<class>com.afunms.sysset.manage.ServiceManager</class>
+	</manager>
+	<manager>
+		<name>producer</name>
+		<class>com.afunms.sysset.manage.ProducerManager</class>
+	</manager>
+	
+	<manager>
+		<name>network</name>
+		<class>com.afunms.topology.manage.NetworkManager</class>
+	</manager>
+	
+	<!-- =================== inform ======================-->
+	<manager>
+		<name>alarm</name>
+		<class>com.afunms.inform.manage.AlarmManager</class>
+	</manager>
+	<manager>
+		<name>inform</name>
+		<class>com.afunms.inform.manage.InformManager</class>
+	</manager>
+	<manager>
+		<name>report</name>
+		<class>com.afunms.inform.manage.ReportManager</class>
+	</manager>
+	
+	<!-- =================== monitor ======================-->
+	<manager>
+		<name>monitor</name>
+		<class>com.afunms.polling.manage.PollMonitorManager</class>
+	</manager>
+	<!-- =================== Ntp管理 ======================-->
+	<manager>
+		<name>ntp</name>
+		<class>com.afunms.application.manage.NTPManager</class>
+	</manager>
+	<!-- =================== 业务 ======================-->
+	<manager>
+		<name>business</name>
+		<class>com.afunms.config.manage.BusinessManager</class>
+	</manager>
+	<!-- =================== 员工库 ======================-->
+	<manager>
+		<name>employee</name>
+		<class>com.afunms.config.manage.EmployeeManager</class>
+	</manager>
+	<!-- =================== IP/MAC绑定 ======================-->
+	<manager>
+		<name>ipmac</name>
+		<class>com.afunms.topology.manage.IpMacManager</class>
+	</manager>
+	<manager>
+		<name>fdb</name>
+		<class>com.afunms.topology.manage.FdbManager</class>
+	</manager>
+	<!-- =================== IP/MAC基线管理 ======================-->
+	<manager>
+		<name>ipmacbase</name>
+		<class>com.afunms.topology.manage.IpMacBaseManager</class>
+	</manager>
+	<!-- =================== MAC变更 ======================-->
+	<manager>
+		<name>ipmacchange</name>
+		<class>com.afunms.topology.manage.IpMacChangeManager</class>
+	</manager>
+	<!-- =================== 端口配置 ======================-->
+	<manager>
+		<name>portconfig</name>
+		<class>com.afunms.config.manage.PortconfigManager</class>
+	</manager>
+	<!-- =================== 磁盘告警配置 ======================-->
+	<manager>
+		<name>disk</name>
+		<class>com.afunms.config.manage.DiskconfigManager</class>
+	</manager>
+	<!-- =================== 告警管理 ======================-->
+	<manager>
+		<name>event</name>
+		<class>com.afunms.event.manage.EventManager</class>
+	</manager>
+	
+	<!-- =================== System管理 ======================-->
+	<manager>
+		<name>system</name>
+		<class>com.afunms.system.manage.SystemManager</class>
+	</manager>
+	
+	<!-- ===================用户审计管理 ======================-->
+	<manager>
+		<name>userAudit</name>
+		<class>com.afunms.system.manage.UserAuditManager</class>
+	</manager>
+	
+	<!-- ===================用户日志管理 ======================-->
+	<manager>
+		<name>userTaskLog</name>
+		<class>com.afunms.system.manage.UserTaskLogManager</class>
+	</manager>
+	
+	<!-- ===================业务列表信息 ======================-->
+	<manager>
+		<name>businessNode</name>
+		<class>com.afunms.business.manage.BusinessNodeManager</class>
+	</manager>
+	<manager>
+		<name>remotePing</name>
+		<class>com.afunms.topology.manage.RemotePingManager</class>
+	</manager>
+	<!-- ===================业务列表采集类型信息 ======================-->
+	<manager>
+		<name>buscolltype</name>
+		<class>com.afunms.business.manage.BusCollectTypeManage</class>
+	</manager>
+	
+	<!-- ===================连通性检测类型配置管理 ======================-->
+	<manager>
+		<name>connectConfig</name>
+		<class>com.afunms.topology.manage.ConnectTypeConfigManager</class>
+	</manager>
+	
+	<!-- ===================vpntelnet管理 ======================-->
+	<manager>
+		<name>vpntelnetconf</name>
+		<class>com.afunms.config.manage.HaweitelnetconfManager</class>
+	</manager>
+	<manager>
+		<name>dispatcher</name>
+		<class>com.afunms.detail.manage.DispatcherManager</class>
+	</manager>
+	<!-- ===================性能中业务视图管理 ======================-->
+	<manager>
+		<name>businessview</name>
+		<class>com.afunms.topology.manage.BusinessVeiwManager</class>
+	</manager>
+	<!-- ====================FTP传输管理 ========================= -->
+	<manager>
+		<name>ftptrans</name>
+		<class>com.afunms.system.manage.FtpTransConfigManager</class>
+	</manager>
+
+	<manager>
+		<name>amChart</name>
+		<class>com.afunms.chart.amchart.manage.AmChartManage</class>
+	</manager>
+	<!-- =================端口告警配置管理============================ -->
+	<manager>
+		<name>alarmport</name>
+		<class>com.afunms.alarm.manage.AlarmPortManager</class>
+	</manager>
+	<!-- =================服务器重新启动配置管理============================-->
+	<manager>
+		<name>serverUpAndDown</name>
+		<class>com.afunms.application.manage.MachineUpAndDownManager</class>
+	</manager>
+	
+	<!-- =================首页模块配置管理（按照角色分配）============================ -->
+	<manager>
+		<name>homerole</name>
+		<class>com.afunms.home.role.manage.HomeRoleManager</class>
+	</manager>
+	<!-- =================首页模块显示配置管理(用户执行设定）============================ -->
+	<manager>
+		<name>homeuser</name>
+		<class>com.afunms.home.user.manage.HomeUserManager</class>
+	</manager>
+	<!-- =================网络设备配置文件校验管理============================ -->
+	
+	<manager>
+		<name>telnetConfig</name>
+		<class>com.afunms.config.manage.TelnetConfigManager</class>
+	</manager>
+	<!--性能页面tab跳转控制类 -->
+	<manager>
+		<name>tabMenu</name>
+		<class>com.afunms.application.manage.TabMenuManager</class>
+	</manager>
+	<!-- 性能面板 -->
+	<manager>
+		<name>performancePanel</name>
+		<class>com.afunms.application.manage.PerformancePanelManager</class>
+	</manager>
+	<!-- 采集代理设置  -->
+	<manager>
+		<name>agent</name>
+		<class>com.afunms.config.manage.AgentConfigManager</class>
+	</manager>
+	<!-- 节点采集代理设置  -->
+	<manager>
+		<name>agentnode</name>
+		<class>com.afunms.config.manage.AgentNodeManager</class>
+	</manager>
+	<!-- 服务器应用设置 -->
+	<manager>
+		<name>hostApply</name>
+		<class>com.afunms.application.manage.HostApplyManager</class>
+	</manager>
+	<!-- CISCOSLA设备节点配置的属性 -->
+	<manager>
+		<name>ciscoslaproperty</name>
+		<class>com.afunms.config.manage.CiscoSlaNodePropManager</class>
+	</manager>
+	<!-- CISCOSLA设备节点配置审计 -->
+	<manager>
+		<name>slaAudit</name>
+		<class>com.afunms.slaaudit.manage.SlaAuditManager</class>
+	</manager>
+	<!-- SLA ICMP监视信息列表 -->
+	<manager>
+		<name>slaicmp</name>
+		<class>com.afunms.application.manage.SlaICMPManager</class>
+	</manager>
+	<!-- SLA UDP Jitter监视信息列表 -->
+	<manager>
+		<name>slaudpjitter</name>
+		<class>com.afunms.application.manage.SlaUDPJitterManager</class>
+	</manager>
+	
+	<!-- ===================businesssystem管理 ======================-->
+	<manager>
+		<name>businesssystem</name>
+		<class>com.afunms.config.manage.BusinessSystemManager</class>
+	</manager>
+	
+	
+	
+    <manager>
+		<name>device</name>
+		<class>com.afunms.device.manage.DeviceManager</class>
+    </manager>
+    <manager>
+		<name>netCfgFile</name>
+		<class>com.afunms.automation.manage.NetCfgFileManager</class>
+    </manager>
+    <manager>
+		<name>autoControl</name>
+		<class>com.afunms.automation.manage.AutoControlManager</class>
+    </manager>
+    <manager>
+		<name>remoteDevice</name>
+		<class>com.afunms.automation.manage.RemoteDeviceManager</class>
+    </manager>
+    <manager>
+		<name>configRule</name>
+		<class>com.afunms.automation.manage.NetWorkConfigRuleManager</class>
+	</manager>
+</config>

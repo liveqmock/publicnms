@@ -1,0 +1,46 @@
+body{
+	margin:0px;
+}
+table.tbEntity {
+	border: 1px solid #cad9ea;
+	color: #666;
+	background-color: white;
+}
+
+td.title {
+	height: 30px;
+	padding-left: 10px;
+	background: url('../images/right_t_02.jpg');
+	background-repeat: repeat-x;
+	font-weight: bold;
+}
+
+table.tbEntity th {
+	background: url('img/th_bg.gif');
+	background-repeat: repeat-x;
+	height: 30px;
+	font-size: 12px;
+}
+
+table.tbEntity td,table.tbEntity th {
+	border: 1px solid #cad9ea;
+	padding: 0 1em 0;
+}
+
+table.tbEntity tr.data {
+	height: 23px;
+	text-align: center;
+	background-color:expression((this.sectionRowIndex%2==0)?"#FFFFFF":"#F8F8FF");
+}
+tr.data td{
+	
+	margin-top:10px;
+}
+
+.bar{
+	height: 29px;
+	background: url('../images/right_t_02.jpg');
+	background-repeat: repeat-x;
+	padding-left:20px;
+	line-height:32px;
+}

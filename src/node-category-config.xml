@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="gb2312"?>
+<node-category>
+    <category name="net" id="01">
+    </category>
+    <category name="host" id="02">
+    
+    </category>
+    <category name="db" id="03">
+    
+    </category>
+    <category name="middleware" id="04">
+        <category name="tomcat" id="0401">
+            <tables>
+                <table name="tomcatping" engine="InnoDB" charset="gb2312" primary-key="ID">
+                    <column name="ID" type="bigint" length="20" not-null="true" auto-increment="true"></column>
+                    <column name="IPADDRESS" type="VARCHAR" length="50"></column>
+                    <column name="RESTYPE" type="VARCHAR" length="50"></column>
+                    <column name="CATEGORY" type="VARCHAR" length="50"></column>
+                    <column name="ENTITY" type="VARCHAR" length="50"></column>
+                    <column name="SUBENTITY" type="VARCHAR" length="50"></column>
+                    <column name="THEVALUE" type="VARCHAR" length="255"></column>
+                    <column name="COLLECTTIME" type="timestamp"></column>
+                    <column name="UNIT" type="VARCHAR" length="30"></column>
+                    <column name="COUNT" type="VARCHAR" length="50"></column>
+                    <column name="BAK" type="VARCHAR" length="50"></column>
+                    <column name="CHNAME" type="VARCHAR" length="50"></column>
+                </table>
+                <table name="tomcatjvm" engine="InnoDB" charset="gb2312" primary-key="ID">
+                    <column name="ID" type="bigint" length="20" not-null="true" auto-increment="true"></column>
+                    <column name="IPADDRESS" type="VARCHAR" length="50"></column>
+                    <column name="RESTYPE" type="VARCHAR" length="50"></column>
+                    <column name="CATEGORY" type="VARCHAR" length="50"></column>
+                    <column name="ENTITY" type="VARCHAR" length="50"></column>
+                    <column name="SUBENTITY" type="VARCHAR" length="50"></column>
+                    <column name="THEVALUE" type="VARCHAR" length="255"></column>
+                    <column name="COLLECTTIME" type="timestamp"></column>
+                    <column name="UNIT" type="VARCHAR" length="30"></column>
+                    <column name="COUNT" type="VARCHAR" length="50"></column>
+                    <column name="BAK" type="VARCHAR" length="50"></column>
+                    <column name="CHNAME" type="VARCHAR" length="50"></column>
+                </table>
+            </tables>
+        </category>
+        <category name="jboss" id="0402">
+            <tables>
+                <table name="jbossping" engine="InnoDB" charset="gb2312" primary-key="ID">
+                    <column name="ID" type="bigint" length="20" not-null="true" auto-increment="true"></column>
+                    <column name="IPADDRESS" type="VARCHAR" length="50"></column>
+                    <column name="RESTYPE" type="VARCHAR" length="50"></column>
+                    <column name="CATEGORY" type="VARCHAR" length="50"></column>
+                    <column name="ENTITY" type="VARCHAR" length="50"></column>
+                    <column name="SUBENTITY" type="VARCHAR" length="50"></column>
+                    <column name="THEVALUE" type="VARCHAR" length="255"></column>
+                    <column name="COLLECTTIME" type="timestamp"></column>
+                    <column name="UNIT" type="VARCHAR" length="30"></column>
+                    <column name="COUNT" type="VARCHAR" length="50"></column>
+                    <column name="BAK" type="VARCHAR" length="50"></column>
+                    <column name="CHNAME" type="VARCHAR" length="50"></column>
+                </table>
+            </tables>
+        </category>
+    </category>
+    <category name="service" id="05">
+        <category name="ftp" id="0501">
+            <tables>
+                <table name="ftp" engine="InnoDB" charset="gb2312" primary-key="ID">
+                    <column name="ID" type="bigint" length="20" not-null="true" auto-increment="true"></column>
+                    <column name="CATEGORY" type="VARCHAR" length="50"></column>
+                    <column name="ENTITY" type="VARCHAR" length="100"></column>
+                    <column name="SUBENTITY" type="VARCHAR" length="50"></column>
+                    <column name="THEVALUE" type="VARCHAR" length="255"></column>
+                    <column name="COLLECTTIME" type="timestamp"></column>
+                </table>
+            </tables>
+        </category>
+        <category name="email" id="0502">
+        </category>
+        <category name="web" id="0503">
+        </category>
+        <category name="dns" id="0503">
+        </category>
+    </category>
+</node-category>

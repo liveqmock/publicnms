@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gb2312"?>
+ <category_detail>
+   <category id="1">
+     <cn_name>port</cn_name>
+     <en_name>port</en_name>
+     <up_up_image>up_up_green.gif</up_up_image>
+     <down_up_image>down_up_green.gif</down_up_image>
+     <up_down_image>up_down_gray.gif</up_down_image>
+     <down_down_image>down_down_gray.gif</down_down_image>
+   </category>
+   <category id="2">
+     <cn_name>gport</cn_name>
+     <en_name>gport</en_name>
+     <up_up_image>up_green.gif</up_up_image>
+     <down_up_image>up_green.gif</down_up_image>
+     <up_down_image>down_port.gif</up_down_image>
+     <down_down_image>down_port.gif</down_down_image>
+   </category>
+ </category_detail>

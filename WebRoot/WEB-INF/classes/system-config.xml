@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system-config> 
+  <!-- SNMP版本 -->
+  <snmpversion>v2+v1</snmpversion>
+  <!-- 服务器 -->
+  <app-server>tomcat</app-server>
+  <!-- 连接db的jndi -->
+  <jndi>jdbc/afunms</jndi>
+  <!-- 是否打印info信息 -->
+  <log-info>true</log-info>
+  <!-- 是否打印error信息 -->
+  <log-error>true</log-error>
+  <!-- 可同时运行的最大线程数 -->
+  <max_threads>30</max_threads>
+  <!-- 发现时一个线程处理的IP数 -->
+  <discover_per_thread_ips>30</discover_per_thread_ips>
+  <!-- 轮询时一个线程处理的被监视节点数 -->
+  <poll_per_thread_nodes>20</poll_per_thread_nodes>  
+  <!--  轮询线程运行时隔时间(分钟)--> 
+  <poll_thread_interval>5</poll_thread_interval>
+  <!-- 发现完了吗?-->
+  <has_discoverd>false</has_discoverd>
+  <!-- 启动轮询吗?-->
+  <start_polling>true</start_polling>
+</system-config>
+  

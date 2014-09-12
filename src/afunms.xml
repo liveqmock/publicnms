@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- this xml file should be put \conf\Catalina\localhost\ -->
+<Context docBase="afunms" path="/afunms">
+  <Resource name="jdbc/afunms" type="javax.sql.DataSource"/>
+  <ResourceParams name="jdbc/afunms">
+    <parameter>
+      <name>maxWait</name>
+      <value>5000</value>
+    </parameter>
+    <parameter>
+      <name>maxActive</name>
+      <value>50</value>
+    </parameter>
+    <parameter>
+      <name>username</name>
+      <value>root</value>
+    </parameter>
+    <parameter>
+      <name>password</name>
+      <value>root</value>
+    </parameter>
+    <parameter>
+      <name>url</name>
+      <value>jdbc:mysql://localhost:3306/afunms?useUnicode=true&amp;characterEncoding=utf-8</value>
+    </parameter>
+    <parameter>
+      <name>driverClassName</name>
+      <value>com.mysql.jdbc.Driver</value>
+    </parameter>
+    <parameter>
+      <name>maxIdle</name>
+      <value>2</value>
+    </parameter>
+  </ResourceParams>
+  
+</Context>

@@ -1,0 +1,11 @@
+您只需要把它放在您web应用下就行
+在你要用的ext的页面，在页面中加入
+<link rel="stylesheet" type="text/css"
+	href="/nms/ext/lib/resources/css/ext-all.css" />
+<link rel="stylesheet" type="text/css" href="/ext/css/common.css" />
+<script type="text/javascript"
+	src="/nms/ext/lib/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="/nms/ext/lib/ext-all.js"></script>
+<script type="text/javascript"
+	src="/nms/ext/lib/locale/ext-lang-zh_CN.js"></script>
+<script>

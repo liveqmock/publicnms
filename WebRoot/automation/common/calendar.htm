@@ -1,0 +1,376 @@
+<html>
+	<head>
+		<style>
+.pop {
+	FONT-FAMILY: ËÎÌå, "Arial";
+	FONT-SIZE: 9pt;
+	color
+	="#000000"
+}
+
+.hdr {
+	BORDER-RIGHT: black 0px solid;
+	BORDER-TOP: black 0px solid;
+	BACKGROUND: #66cc99;
+	BORDER-LEFT: black 0px solid;
+	COLOR: #000000;
+	BORDER-BOTTOM: black 0px solid
+}
+
+.hdrA {
+	BORDER-RIGHT: black 0px solid;
+	BORDER-TOP: black 0px solid;
+	BACKGROUND: #66cc99;
+	BORDER-LEFT: black 0px solid;
+	CURSOR: hand;
+	COLOR: #999999;
+	BORDER-BOTTOM: black 0px solid
+}
+
+.ndt {
+	WIDTH: 19px;
+	POSITION: absolute;
+	HEIGHT: 19px
+}
+
+.bdt {
+	WIDTH: 19px;
+	POSITION: absolute;
+	HEIGHT: 19px
+}
+
+.dt {
+	WIDTH: 19px;
+	CURSOR: hand;
+	POSITION: absolute;
+	HEIGHT: 19px
+}
+
+.sdt {
+	WIDTH: 19px;
+	POSITION: absolute;
+	HEIGHT: 19px
+}
+</style>
+	</head>
+	<body text="#000000" vLink="#990000" aLink="#990000" link="#990000"
+		bgColor="#ffffff" onload="DoLoad()">
+		<basefont face="Arial,Helvetica,Geneva,Swiss,Sans Serif">
+		<table
+			style="BACKGROUND: white; BORDER-BOTTOM: black solid 2px; BORDER-LEFT: black solid 2px; BORDER-RIGHT: black solid 2px; BORDER-TOP: black solid 2px; FONT: 8pt arial"
+			cellSpacing="0" cellPadding="0" border="0">
+			<tr>
+				<td height="20">
+					<table style="FONT: 8pt arial" height="20" cellSpacing="0"
+						cellPadding="0" border="0">
+						<tr>
+							<td class="hdrA" id="PrevDiv" width="16">
+								<img id="Prev" onclick="PC();" alt="Show Previous Month"
+									src="calendar/prev.gif" width="20" height="21">
+							</td>
+							<td class="hdr" align="middle" width="104">
+								<span id="YearTitle"></span>&nbsp;.&nbsp;
+								<span id="MonthTitle"></span>
+							</td>
+							<td class="hdrA" id="NextDiv" width="16">
+								<img id="Next" onclick="NC();" alt="Show Next Month"
+									src="calendar/next.gif" width="20" height="21">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table cellSpacing="0" cellPadding="0" border="0">
+						<tr>
+							<td>
+								<img id="WeekImg" src="calendar/week0.gif" WIDTH="141"
+									HEIGHT="20">
+							</td>
+						</tr>
+						<tr>
+							<td style="POSITION: relative" align="middle">
+								<img class="sdt" id="SelDate" src="calendar/seldate.gif"
+									WIDTH="19" HEIGHT="19">
+								<img id="MonthImg"
+									style="LEFT: 0px; POSITION: relative; TOP: 0px"
+									src="calendar/blank_2.gif" width="142" height="121">
+								<div id="BKIMG1">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+									<img src="calendar/date.gif" WIDTH="19" HEIGHT="19">
+								</div>
+								<img class="ndt" id="Today" style="DISPLAY: none" onclick="TC()"
+									src="calendar/ring.gif" WIDTH="19" HEIGHT="19">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" height="20">
+					<a href="javascript:CC()" class="pop">¹Ø±Õ´°¿Ú</a>
+				</td>
+			</tr>
+		</table>
+		<script>        
+<!--        
+var g_fCalLoaded=false;        
+var da=document.all;        
+var wp=window.parent;        
+var cf=wp.document.all.CalFrame;        
+var bdc=da.BKIMG1.children;        
+var dMin;var dMax;        
+var XOff=2;var YOff=1;        
+var XSize=20;var YSize=20;        
+var g_dC=-1;var g_mC=-1;var g_yC=-1;        
+var g_dI=-1;var g_mI=-1;var g_yI=-1;        
+        
+function DoLoad()        
+{        
+for(i=0;i<7;i++)        
+{        
+	for(j=0;j<6;j++)        
+	{        
+		var t=j*7+i;        
+		bdc[t].day=t+1;        
+		bdc[t].onclick=BC;        
+		bdc[t].className="dt";        
+		bdc[t].style.left=da.MonthImg.offsetLeft+XOff+XSize*i-1;        
+		bdc[t].style.top=da.MonthImg.offsetTop+YOff+YSize*j;        
+	}        
+}        
+}        
+        
+function TC()        
+{        
+if(event.srcElement.className=="dt")        
+{        
+	var dt=new Date();        
+	wp.SetDate(dt.getDate(),dt.getMonth()+1,dt.getFullYear());        
+	cf.style.display="none";        
+}        
+event.cancelBubble = true;        
+}        
+        
+function BC()        
+{        
+if(event.srcElement.className=="dt")        
+{        
+	var iDay = event.srcElement.day;        
+	iDay-=GetDOW(1,g_mC,g_yC);        
+	wp.SetDate(iDay,g_mC,g_yC);        
+	cf.style.display="none";        
+}        
+event.cancelBubble=true;        
+}        
+        
+function CC() {cf.style.display="none";}        
+        
+function NC()        
+{        
+if(g_mC==12) SetDate(g_dC,1,g_yC+1);        
+else SetDate(g_dC,g_mC+1,g_yC);        
+}        
+        
+function PC()        
+{        
+if(g_mC==1) SetDate(g_dC,12,g_yC-1);        
+else SetDate(g_dC,g_mC-1,g_yC);        
+}        
+        
+function SetInputDate(day,month,year) {g_dI = day;g_mI = month;g_yI = year;}        
+        
+function FmtTitle(str)        
+{        
+var r=str.charAt(0);        
+for(i=1;i<str.length;i++) r=r+"&nbsp;"+str.charAt(i);        
+return r;		        
+}        
+        
+function SetMinMax(min,max) {dMin=min;dMax=max;}        
+        
+function SetDate(day, month, year)        
+{        
+da.WeekImg.src="calendar/week"+wp.GetDowStart()+".gif";        
+da.MonthImg.src="calendar/w"+GetDOW(1,month,year)+"d"+GetMonthCount(month,year)+".gif";   
+ //alert(da.MonthImg.src);
+da.MonthTitle.innerHTML=FmtTitle(rgMN[month-1]);    
+da.YearTitle.innerHTML=FmtTitle(year.toString());    
+var dt=new Date();        
+var s,n,v,d;        
+        
+d="none";        
+if(month==dt.getMonth()+1&&year==dt.getFullYear())        
+{        
+	iBox=dt.getDate()+GetDOW(1,dt.getMonth()+1,dt.getFullYear())-1;        
+	if(ValidDate(dt.getDate(),dt.getMonth()+1,dt.getFullYear())) n="dt";        
+	else n="bdt";        
+	da.Today.className=n;        
+        
+	da.Today.style.left=bdc[iBox].style.left;        
+	da.Today.style.top=bdc[iBox].style.top;        
+	d="block";        
+}        
+da.Today.style.display=d;        
+        
+d="none";        
+if(-1!=g_dI&&month==g_mI&&year==g_yI)        
+{        
+	iBox=g_dI+GetDOW(1,g_mI,g_yI)-1;        
+	da.SelDate.style.left=bdc[iBox].style.left;        
+	da.SelDate.style.top=bdc[iBox].style.top;        
+	d="block";        
+}        
+da.SelDate.style.display=d;        
+        
+/*if( year<dMin.getFullYear() || (year==dMin.getFullYear()&&month<=(dMin.getMonth()+1)) ) {n="hdr";v="hidden";}        
+else {n="hdrA";v="visible";}        
+da.PrevDiv.className=n;        
+da.Prev.style.visibility=v;        
+        
+if( year>dMax.getFullYear() || (year==dMax.getFullYear()&&month>=(dMax.getMonth()+1)) ) {n="hdr";v="hidden";}        
+else {n="hdrA";v="visible";}        
+da.NextDiv.className=n;        
+da.Next.style.visibility=v;       */ 
+        
+var i=0;        
+var iMin=GetDOW(1,month,year);        
+var iMax=GetMonthCount(month,year)+GetDOW(1,month,year);        
+        
+for(;i<iMin;i++) {bdc[i].src="calendar/nodate.gif";bdc[i].className="ndt";}        
+/*if( year<dMin.getFullYear() || (year==dMin.getFullYear()&&month<(dMin.getMonth()+1)) || year>dMax.getFullYear() || (year==dMax.getFullYear()&&month>(dMax.getMonth()+1)) )        
+{        
+	for(;i<iMax;i++) {bdc[i].src="calendar/baddate.gif";bdc[i].className="bdt";}        
+}        
+else if(month==(dMin.getMonth()+1))        
+{        
+	iBox=dMin.getDate()+GetDOW(1,dMin.getMonth()+1,dMin.getFullYear())-1;        
+	for(;i<iMax;i++)        
+	{        
+		if(i<iBox) {s="calendar/baddate.gif";n="bdt";}        
+		else {s="calendar/date.gif";n="dt";}        
+		bdc[i].src=s;bdc[i].className=n;        
+	}        
+}        
+else if(month==(dMax.getMonth()+1))        
+{        
+	iBox=dMax.getDate()+GetDOW(1,dMax.getMonth()+1,dMax.getFullYear())-1;        
+	for(;i<iMax;i++)        
+	{        
+		if(i<iBox+1) {s="calendar/date.gif";n="dt";}        
+		else {s="calendar/baddate.gif";n="bdt";}        
+		bdc[i].src=s;bdc[i].className=n;        
+	}        
+}        
+else        
+{   */     
+	for(;i<iMax;i++) {bdc[i].src="calendar/date.gif";bdc[i].className="dt";}        
+//}        
+for(;i<42;i++) {bdc[i].src="calendar/nodate.gif";bdc[i].className="ndt";}        
+        
+g_dC=day;        
+g_mC=month;        
+g_yC=year;        
+}        
+        
+function ValidDate(day,month,year)        
+{        
+if( year<dMin.getFullYear() || (year==dMin.getFullYear()&&month<(dMin.getMonth()+1)) || (year==dMin.getFullYear()&&month==(dMin.getMonth()+1)&&day<dMin.getDate()) ) return false;        
+else if( year>dMax.getFullYear() || (year==dMax.getFullYear()&&month>(dMax.getMonth()+1)) || (year==dMax.getFullYear()&&month==(dMax.getMonth()+1)&&day>dMax.getDate()) ) return false;        
+else return true;        
+}        
+        
+function GetMonthCount(month,year)        
+{        
+var c=rgMC[month-1];        
+if((2==month)&&IsLeapYear(year)) c++;
+return c;        
+}        
+        
+function IsLeapYear(year) {return( 0==year%4 && ((year%100!=0)||(year%400==0)) );}        
+        
+function GetDOW(day,month,year)        
+{        
+var dt=new Date(year,month-1,day);
+return (dt.getDay()+(7-wp.GetDowStart()))%7;        
+}        
+
+function cityname(citys)
+{
+ return true;
+}
+
+var rgMN=new Array(12);        
+rgMN[0]="1";        
+rgMN[1]="2";        
+rgMN[2]="3";        
+rgMN[3]="4";        
+rgMN[4]="5";        
+rgMN[5]="6";        
+rgMN[6]="7";        
+rgMN[7]="8";        
+rgMN[8]="9";        
+rgMN[9]="10";        
+rgMN[10]="11";        
+rgMN[11]="12";        
+        
+var rgMC=new Array(12);        
+rgMC[0]=31;        
+rgMC[1]=28;        
+rgMC[2]=31;        
+rgMC[3]=30;        
+rgMC[4]=31;        
+rgMC[5]=30;        
+rgMC[6]=31;        
+rgMC[7]=31;        
+rgMC[8]=30;        
+rgMC[9]=31;        
+rgMC[10]=30;        
+rgMC[11]=31;        
+        
+g_fCalLoaded=true;        
+//-->        
+</script>
+	</body>
+</html>

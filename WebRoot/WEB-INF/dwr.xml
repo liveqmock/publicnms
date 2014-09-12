@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr
+PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+"http://www.getahead.ltd.uk/dwr/dwr20.dtd">
+<dwr>
+	<allow>
+		<create creator="new" javascript="DWRUtil">
+			<param name="class" value="com.afunms.toolService.DWRUtil" />
+		</create>
+		
+		<create creator="new" javascript="AlarmSummarize">
+            <param name="class" value="com.afunms.event.service.AlarmSummarize"/> 
+            <include method="getLastestEventList1"/>
+        </create>
+		<!-- 网络设备 -->
+		<create creator="new" javascript="NetRemoteService">
+			<param name="class" value="com.afunms.detail.net.remote.NetRemote"/> 
+			<include method="getSystemInfo"/>
+			<include method="getCurrDayPingAvgInfo"/>
+			<include method="getCurrCpuAvgInfo"/>
+			<include method="getStautsInfo"/>
+			<include method="getCategoryInfo"/>
+			<include method="getSupperInfo"/>
+			<include method="getTabInfo"/>
+			<include method="getHostNodeInfo"/>
+			<include method="getInterfaceInfo"/>
+			<include method="getFDBInfo"/>
+			<include method="getARPInfo"/>
+			<include method="getIpListInfo"/>
+			<include method="getRouterInfo"/>
+			<include method="getAlarmInfo"/>
+			<include method="getAlarmDetailInfo"/>
+			
+		</create> 
+		<!-- 光纤交换机设备 -->
+		<create creator="new" javascript="FibreNetRemoteService">
+			<param name="class" value="com.afunms.detail.net.remote.FibreNetRemote"/> 
+			<include method="getSystemInfo"/>
+			<include method="getCurrDayPingAvgInfo"/>
+			<include method="getCurrCpuAvgInfo"/>
+			<include method="getStautsInfo"/>
+			<include method="getCategoryInfo"/>
+			<include method="getSupperInfo"/>
+			<include method="getTabInfo"/>
+			<include method="getHostNodeInfo"/>
+			<include method="getAlarmInfo"/>
+			<include method="getInterfaceInfo"/>
+			<include method="getRouterInfo"/>
+			<include method="getProcessInfo"/>
+			<include method="getLightInfo"/>
+			<include method="getFibreConfigInfo"/>
+			<include method="getAlarmDetailInfo"/>
+
+			<include method="getFibreCapabilityInfo"/>
+		</create> 
+		<create creator="new" javascript="TopoRemoteService">
+			<param name="class" value="com.afunms.topology.manage.SubMapManager"/> 
+			<include method="removeEquipFromSubMap"/>
+			<include method="addEquipToMap"/>
+			<include method="addHintMeta"/>
+			<include method="getShowMessage"/>
+			<include method="refreshImage"/>
+			<include method="addLink"/>
+			<include method="confirmAlarm"/>
+			<include method="confirmSoundAlarm"/>
+			<include method="playSoundAlarm"/>
+		</create> 
+		<create creator="new" javascript="LinkRemoteService">
+			<param name="class" value="com.afunms.topology.manage.LinkManager"/> 
+			<include method="addLink"/>
+			<include method="batchEditLink"/>
+			<include method="addDemoLink"/>
+			<include method="getShowMessage"/>
+			<include method="refreshLink"/>
+			<include method="confirmAlarm"/>
+		</create> 
+		<create creator="new" javascript="MachineUpAndDownRemoteService">
+			<param name="class" value="com.afunms.application.manage.MachineUpAndDownManager"/> 
+			<include method="policyDown"/>
+			<include method="complicatDown"/>
+			<include method="refreshState"/>
+			<include method="stopDown"/>
+		</create>  
+		<!-- 主机服务器设备 -->
+		<create creator="new" javascript="HostRemoteService">
+			<param name="class" value="com.afunms.detail.host.remote.HostRemote"/> 
+			<include method="getSystemInfo"/>
+			<include method="getCurrDayPingAvgInfo"/>
+			<include method="getCurrCpuAvgInfo"/>
+			<include method="getStautsInfo"/>
+			<include method="getCategoryInfo"/>
+			<include method="getSupperInfo"/>
+			<include method="getTabInfo"/>
+			<include method="getHostNodeInfo"/>
+			<include method="getInterfaceInfo"/>
+			<include method="getCurrPerCpuListInfo"/>
+			<include method="getProcessInfo"/>
+			<include method="getProcessDetailInfo"/>
+			<include method="getARPInfo"/>
+			<include method="getSoftwareInfo"/>
+			<include method="getServiceInfo"/>
+			<include method="getSyslogInfo"/>
+			<include method="getDeviceInfo"/>
+			<include method="getStorageInfo"/>
+			<include method="getAlarmInfo"/>
+			<include method="getAlarmDetailInfo"/>
+		</create> 
+		
+		<!-- AIX服务器设备 -->
+		<create creator="new" javascript="AixRemoteService">
+			<param name="class" value="com.afunms.detail.host.remote.AixRemote"/> 
+			<include method="getSystemInfo"/>
+			<include method="getCurrDayPingAvgInfo"/>
+			<include method="getCurrCpuAvgInfo"/>
+			<include method="getStautsInfo"/>
+			<include method="getCategoryInfo"/>
+			<include method="getSupperInfo"/>
+			<include method="getTabInfo"/>
+			<include method="getHostNodeInfo"/>
+			<include method="getInterfaceInfo"/>
+			<include method="getDiskInfo"/>
+			<include method="getDiskInfoUtilizationImg"/>
+			<include method="getCurrPerCpuListInfo"/>
+			<include method="getCpuPerfInfo"/>
+			<include method="getDiskPerfInfo"/>
+			<include method="getPagePerfInfo"/>
+			<include method="getPageSpaceInfo"/>
+			<include method="getMemoryConfigInfo"/>
+			<include method="getNetmediaConfigInfo"/>
+			<include method="getUserConfigInfo"/>
+			<include method="getProcessInfo"/>
+			<include method="getProcessDetailInfo"/>
+			<include method="getSyslogInfo"/>
+			<include method="getAlarmInfo"/>
+			<include method="getAlarmDetailInfo"/>
+		</create> 
+		
+		<!-- Linux服务器设备 -->
+		<create creator="new" javascript="LinuxRemoteService">
+			<param name="class" value="com.afunms.detail.host.remote.LinuxRemote"/> 
+			<include method="getSystemInfo"/>
+			<include method="getCurrDayPingAvgInfo"/>
+			<include method="getCurrCpuAvgInfo"/>
+			<include method="getStautsInfo"/>
+			<include method="getCategoryInfo"/>
+			<include method="getSupperInfo"/>
+			<include method="getTabInfo"/>
+			<include method="getHostNodeInfo"/>
+			<include method="getInterfaceInfo"/>
+			<include method="getDiskInfo"/>
+			<include method="getDiskInfoUtilizationImg"/>
+			<include method="getCurrPerCpuListInfo"/>
+			<include method="getCpuPerfInfo"/>
+			<include method="getDiskPerfInfo"/>
+			<include method="getPagePerfInfo"/>
+			<include method="getPageSpaceInfo"/>
+			<include method="getMemoryConfigInfo"/>
+			<include method="getNetmediaConfigInfo"/>
+			<include method="getUserConfigInfo"/>
+			<include method="getProcessInfo"/>
+			<include method="getProcessDetailInfo"/>
+			<include method="getSyslogInfo"/>
+			<include method="getAlarmInfo"/>
+			<include method="getAlarmDetailInfo"/>
+		</create> 
+		
+		<!-- AS400服务器设备 -->
+		<create creator="new" javascript="AS400RemoteService">
+			<param name="class" value="com.afunms.detail.host.remote.AS400Remote"/> 
+			<include method="getSystemInfo"/>
+			<include method="getCurrDayPingAvgInfo"/>
+			<include method="getCurrCpuAvgInfo"/>
+			<include method="getStautsInfo"/>
+			<include method="getCategoryInfo"/>
+			<include method="getSupperInfo"/>
+			<include method="getTabInfo"/>
+			<include method="getHostNodeInfo"/>
+			<include method="getSystemValueInfo"/>
+			<include method="getSystemPoolInfo"/>
+			<include method="getDiskInfo"/>
+			<include method="getJobInfo"/>
+			<include method="getJobTypeInfo"/>
+			<include method="getJobSubtypeInfo"/>
+			<include method="getJobActiveStatusInfo"/>
+			<include method="getSubsystemInfo"/>
+			<include method="getJobBySubsystemInfo"/>
+			<include method="getAlarmInfo"/>
+			<include method="getAlarmDetailInfo"/>
+		</create> 
+		
+		<!-- Storage 存储设备 -->
+		<create creator="new" javascript="StorageRemoteService">
+			<param name="class" value="com.afunms.detail.reomte.StorageRemote"/> 
+			<include method="getStorageInfo"/>
+			<include method="getSystemInfo"/>
+			<include method="getTabInfo"/>
+			<include method="getCurrDayPingAvgInfo"/>
+			<include method="getArraySiteInfo"/>
+			<include method="getArrayInfo"/>
+			<include method="getRankInfo"/>
+			<include method="getExtpoolInfo"/>
+			<include method="getFbvolInfo"/>
+			<include method="getVolgrpInfo"/>
+			<include method="getIOPortInfo"/>
+			<include method="getHostConnectInfo"/>
+			<include method="getProducerInfo"/>
+			<include method="getVolgrpFbvolInfo"/>
+		</create> 
+		<!-- CPU利用率 add by zhangcw--> 
+		<create creator="new" javascript="CPUControler">
+  		<param name="class" value="com.afunms.realtime.CPUControler"/>
+  		</create>
+		<!-- 内存 --> 
+		<create creator="new" javascript="MemoryControler">
+  		<param name="class" value="com.afunms.realtime.MemoryControler"/>
+  		</create>
+  		<!-- 流速 --> 
+		<create creator="new" javascript="InterfaceControler">
+  		<param name="class" value="com.afunms.realtime.InterfaceControler"/>
+  		</create>
+  		<!-- 端口流速 --> 
+		<create creator="new" javascript="PortControler">
+  		<param name="class" value="com.afunms.realtime.PortControler"/>
+  		</create>
+  		<!-- 带宽 --> 
+		<create creator="new" javascript="BandwidthControler">
+  		<param name="class" value="com.afunms.realtime.BandwidthControler"/>
+  		</create>
+       <!-- 广播 --> 
+		<create creator="new" javascript="DataPacketControler">
+  		<param name="class" value="com.afunms.realtime.DataPacketControler"/>
+  		</create>
+  		<!-- 多播 --> 
+		<create creator="new" javascript="MulticastPacketControler">
+  		<param name="class" value="com.afunms.realtime.MulticastPacketControler"/>
+  		</create>  
+  		
+  		  		<!-- 通用工具类--> 
+		<create creator="new" javascript="CommonHelper">
+  		<param name="class" value="com.afunms.common.util.CommonHelper"/>
+  		</create>	
+  		<convert converter="bean" match="com.afunms.common.base.BaseVo"/>
+  				
+		<convert converter="bean" match="com.afunms.detail.reomte.model.DetailTabRemote"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.DetailTitleRemote"/>
+		<convert converter="bean" match="com.afunms.topology.model.HostNode"/>
+		<convert converter="bean" match="com.afunms.event.model.EventList"/>
+		<convert converter="bean" match="com.afunms.event.model.CheckEvent"/>
+		<convert converter="bean" match="com.afunms.event.model.Syslog"/>
+		<convert converter="bean" match="com.afunms.temp.model.NodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.FdbNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.RouterNodeTemp"/>
+		<convert converter="bean" match="com.afunms.polling.om.IpMac"/>
+		<convert converter="bean" match="com.afunms.topology.model.SystemValueForAS400"/>
+		<convert converter="bean" match="com.afunms.topology.model.SystemPoolForAS400"/>
+		<convert converter="bean" match="com.afunms.topology.model.JobForAS400"/>
+		<convert converter="bean" match="com.afunms.topology.model.SubsystemForAS400"/>
+		<convert converter="bean" match="com.afunms.topology.model.DiskForAS400"/>
+		<convert converter="bean" match="com.afunms.application.model.Storage"/>
+		<convert converter="bean" match="com.afunms.config.model.IpAlias"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.ProcessInfo"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.InterfaceInfo"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.DiskInfo"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.CpuPerfInfo"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.DiskPerfInfo"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.PagePerfInfo"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.PageSpaceInfo"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.MemoryConfigInfo"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.NetmediaConfigInfo"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.UserConfigInfo"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.LightInfo"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.FibreConfigInfo"/>
+		<convert converter="bean" match="com.afunms.detail.reomte.model.FibreCapabilityInfo"/>
+		<convert converter="bean" match="com.afunms.temp.model.SoftwareNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.ServiceNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.DeviceNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.StorageNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.StorageArraySiteNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.StorageArrayNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.StorageRankNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.StorageExtpoolNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.StorageFbvolNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.StorageVolgrpNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.StorageIOPortNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.StorageHostConnectNodeTemp"/>
+		<convert converter="bean" match="com.afunms.temp.model.Objbean"/>
+	</allow>
+</dwr>

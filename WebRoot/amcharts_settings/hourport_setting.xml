@@ -1,0 +1,79 @@
+<settings>
+ <data_type>csv</data_type>                                    
+  <csv_separator>;</csv_separator>  
+  <background>
+    <border_color>FFFFFF</border_color>
+    <border_alpha>100</border_alpha>
+  </background>
+  <plot_area>
+    <color>7599d7</color>
+    <alpha>30</alpha>
+    <margins>
+      <left>40</left>
+      <right>10</right>
+      <top>40</top>
+      <bottom>40</bottom>
+    </margins>
+  </plot_area>
+  <grid>
+    <x>
+      <approx_count>10</approx_count>
+    </x>
+  </grid>
+  <axes>
+    <x>
+      <width>1</width>
+      <color>FFFFFF</color>
+      <alpha>25</alpha>
+    </x>
+    <y_left>
+      <width>1</width>
+      <alpha>1</alpha>
+    </y_left>
+  </axes>
+  <values>
+  	<x>
+  	 <frequency>1</frequency>
+      <skip_first>0</skip_first>
+      <skip_last>0</skip_last>
+  	</x>
+    <y_left>
+	 <min>0</min>                                           
+      <max>1</max>    
+      <skip_last>0</skip_last>
+      <integers_only>1</integers_only>
+    </y_left>
+  </values>
+  <legend>
+    <enabled>0</enabled>
+  </legend>
+  <graphs>
+    <graph>
+      <title>今日每小时端口状态(0:断开;1:正常)</title>
+      <color>99FF33</color>
+      <color_hover>6699FF</color_hover>
+      <balloon_text_color>000000</balloon_text_color>
+      <balloon_text><![CDATA[<b>{value}</b><br>{description}]]></balloon_text>
+      <bullet>round_outlined</bullet>
+    </graph>
+  </graphs>
+  <labels>
+    <label lid="0">
+      <text><![CDATA[<b>                                     24小时端口状态(0:断开; 1:正常)</b>]]></text>
+      <x>75</x>
+      <text_size>15</text_size>
+    </label>
+  </labels>
+    <strings>
+    <no_data>无信息显示,请确认是否已设置端口的监控状态!</no_data>                                       <!-- [No data for selected period] (text) if data for selected period is missing, this message will be displayed -->
+    <export_as_image></export_as_image>                       <!-- [Export as image] (text) text for right click menu -->
+    <error_in_data_file></error_in_data_file>                 <!-- [Error in data file] (text) this text is displayed if there is an error in data file or there is no data in file. "There is no data" means that there should actually be at least one space in data file. If data file will be completly empty, it will display "error loading file" text -->
+    <collecting_data></collecting_data>                       <!-- [Collecting data] (text) this text is displayed while exporting chart to an image -->
+    <wrong_zoom_value></wrong_zoom_value>   
+                 
+    <ss></ss>                                                <!-- [] unit of seconds -->
+    <mm></mm>                                                <!-- [:] unit of minutes -->
+    <hh></hh>                                                <!-- [:] unit of hours -->
+    <DD></DD>                                                <!-- [d. ] unit of days -->        
+  </strings>
+</settings>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service id="remoting-service" 
+    class="flex.messaging.services.RemotingService">
+
+    <adapters>
+        <adapter-definition id="java-object" class="flex.messaging.services.remoting.adapters.JavaAdapter" default="true"/>
+    </adapters>
+
+    <default-channels>
+        <channel ref="my-amf"/>
+    </default-channels>
+    <destination id="networkMonitor">
+      <properties>
+         <source>com.afunms.flex.networkTopology.NetworkMonitor</source>
+      </properties>
+   </destination>
+   <destination id="networkMonitor_a">
+      <properties>
+         <source>com.afunms.flex.networkTopology.NetworkMonitor_a</source>
+      </properties>
+   </destination>
+   <destination id="networkMonitor_b">
+      <properties>
+         <source>com.afunms.flex.networkTopology.NetworkMonitor_b</source>
+      </properties>
+   </destination>
+   <destination id="networkMonitor_c">
+      <properties>
+         <source>com.afunms.flex.networkTopology.NetworkMonitor_c</source>
+      </properties>
+   </destination>
+    <destination id="helloWorld">
+		<properties>
+			<source>cn.flextest.HelloWorld</source>
+		</properties>
+     </destination>
+     <destination id="hostNodeDao">
+		<properties>
+			<source>com.afunms.topology.dao.HostNodeDao</source>
+		</properties>
+     </destination>
+     <destination id="nodeHelper">
+		<properties>
+			<source>com.afunms.topology.util.NodeHelper</source>
+		</properties>
+     </destination>
+     <destination id="ServiceForFlex">
+		<properties>
+			<source>com.afunms.topology.manage.ServiceForFlex</source>
+		</properties>
+     </destination>
+     <destination id="userManager">
+		<properties>
+			<source>com.afunms.system.manage.UserManager</source>
+		</properties>
+     </destination>   
+     <destination id="FlexService">
+		<properties>
+			<source>com.afunms.flex.FlexService</source>
+		</properties>
+     </destination>  
+     <destination id="TopNService">
+		<properties>
+			<source>com.afunms.flex.TopNService</source>
+		</properties>
+     </destination>  
+</service>
+
+    

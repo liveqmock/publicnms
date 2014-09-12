@@ -1,0 +1,84 @@
+body{
+color:#000;
+margin:0px;
+background-color:#FFF;
+}
+.table
+{
+font: normal 12px / 200%;
+border: 0px;
+text-align:center;
+width:expression((this.width!="")?this.width:"100%");
+border-collapse:collapse;
+margin:0;
+line-height:20px;
+}
+
+
+.table tr{
+	padding:0px;
+	line-height:20px;
+	}
+.table td{
+	padding:0px;
+	line-height:20px;
+	}
+.table_list
+{
+font: normal 12px / 200%;
+border: 0px;
+text-align:center;
+width:expression((this.width!="")?this.width:"100%");
+border-collapse:collapse;
+margin:0;
+line-height:20px;
+background-color:#FFFFFF;
+}
+.table_list td{
+	padding:0px;height:20px;
+	line-height:20px;
+
+}
+.netToolContent{
+width:100%;
+background-color:#FFFFFF;
+border-bottom:1px solid #999999;
+border-left:1px solid #999999;
+border-right:1px solid #999999;
+}
+.netToolContent ul{
+width:100%;
+margin:0px 0px 0px 5px;
+}
+.netToolContent li{
+list-style:none;
+margin-top:3px;
+}
+.case1_2{
+height:23px;
+float:left;
+width:20%;
+font: normal 12px / 200%;
+text-align:right;
+padding-top:6px;
+margin-bottom:1px;
+background-color:#c7d9ff;
+}
+.case1_2_2{
+height:23px;
+float:left;
+width:20%;
+text-align:left;
+padding-top:6px;
+margin-bottom:1px;
+text-indent:40px;
+}
+.buttonStyle_1{
+margin-top:0px;
+width:70px;
+height:20px;
+border-style:none;
+background-color:#FFF;
+background-image:url(../image/an.gif);
+padding-top:4px;
+}

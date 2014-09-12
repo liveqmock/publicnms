@@ -1,0 +1,41 @@
+<settings>
+  <data_type>csv</data_type>
+  <background>
+    <alpha>100</alpha>
+    <border_alpha>0</border_alpha>
+  </background>
+  <legend>
+    <x>72%</x>
+    <y>40%</y>
+    <width>80</width>
+    <values>
+      <enabled>1</enabled>
+    </values>
+  </legend>
+  <pie>
+    <x>40%</x>
+    <radius>30%</radius>
+    <inner_radius>15</inner_radius>
+    <height>13</height>
+    <angle>15</angle>
+    <gradient>linear</gradient>
+  </pie>
+  <data_labels>
+    <show>{title}: {value}</show>
+    <max_width>140</max_width>
+  </data_labels>
+  <labels>                                                  
+    <label>
+      <x>90</x>                                              
+      <y>10</y>                                              
+      <rotate></rotate>                                       
+      <width></width>                                         
+      <align>center</align>                                        
+      <text_color></text_color>                               
+      <text_size>15</text_size>                               
+      <text>                                              
+        <![CDATA[<b>告警状态</b>]]>
+      </text>        
+    </label>    
+  </labels>
+</settings>

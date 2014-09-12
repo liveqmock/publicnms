@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr
+PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+"http://www.getahead.ltd.uk/dwr/dwr20.dtd">
+<dwr>
+	<allow>
+		<create creator="new" javascript="DWRUtil">
+			<param name="class" value="com.afunms.toolService.DWRUtil" />
+		</create>
+		<create creator="new" javascript="TopoRemoteService">
+			<param name="class" value="com.afunms.topology.manage.SubMapManager"/> 
+			<include method="removeEquipFromSubMap"/>
+			<include method="addEquipToMap"/>
+			<include method="addHintMeta"/>
+		</create> 
+		<create creator="new" javascript="LinkRemoteService">
+			<param name="class" value="com.afunms.topology.manage.LinkManager"/> 
+			<include method="addLink"/>
+			<include method="addDemoLink"/>
+		</create> 
+		<create creator="new" javascript="SubMapRemoteService">
+			<param name="class" value="com.afunms.topology.manage.SubMapManager"/> 
+			<include method="addLink"/>
+		</create> 
+		<create creator="new" javascript="NetPingRemoteService">
+			<param name="class" value="com.afunms.topology.manage.NetPingManager"/> 
+			<include method="addNodeToMap"/>
+			<include method="saveEdit"/>
+		</create> 
+	</allow>
+</dwr>
