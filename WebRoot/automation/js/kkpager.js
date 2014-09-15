@@ -93,6 +93,7 @@ var kkpager = {
 		},
 		//跳转输入框按键操作
 		keypress_gopage : function(){
+			alert(1);
 			var event = arguments[0] || window.event;
 			var code = event.keyCode || event.charCode;
 			//delete key
@@ -110,6 +111,7 @@ var kkpager = {
 		},
 		//跳转框页面跳转
 		gopage : function(){
+			alert(1);
 			var str_page = $('#'+this.gopageTextboxId).val();
 			if(isNaN(str_page)){
 				$('#'+this.gopageTextboxId).val(this.next);

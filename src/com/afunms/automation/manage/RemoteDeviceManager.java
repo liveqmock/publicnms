@@ -25,6 +25,12 @@ import com.afunms.common.base.ManagerInterface;
 import com.afunms.common.util.SessionConstant;
 import com.afunms.system.model.User;
 
+/**
+ * 
+ * @作者： http://www.wenboxz.com
+ * @功能：远程登录设备控制层
+ * @日期：2014-9-15
+ */
 public class RemoteDeviceManager extends BaseManager implements ManagerInterface {
 	static StringBuffer result = new StringBuffer();
 	/**
@@ -36,8 +42,11 @@ public class RemoteDeviceManager extends BaseManager implements ManagerInterface
 	 * @return
 	 */
 	public String passwdList() {
+		//远程设备列表
 		List configingDeviceList = new ArrayList();
+		//创建远程登录设备数据访问层对象
 		NetCfgFileNodeDao netCfgFileNodeDao = new NetCfgFileNodeDao();
+		//分页查询
 		this.list(netCfgFileNodeDao);
 		List telnetConfList = (List) request.getAttribute("list");
 		for (int i = 0; i < telnetConfList.size(); i++) {
@@ -50,6 +59,16 @@ public class RemoteDeviceManager extends BaseManager implements ManagerInterface
 			configingDeviceList.add(cfgingDevice);
 		}
 		request.setAttribute("configlist", configingDeviceList);
+		return "/automation/remote/passwdList.jsp";
+	}
+	
+	public String loadPwdListByPage(){
+		// 远程设备列表
+		List<NetCfgFileNode> ncfnList = new ArrayList<NetCfgFileNode>();
+		//创建远程登录设备数据访问层对象
+		NetCfgFileNodeDao ncfnDao = new NetCfgFileNodeDao();
+		ncfnList = ncfnDao.listByPage(1, "", 5);
+		request.setAttribute("configlist", ncfnList);
 		return "/automation/remote/passwdList.jsp";
 	}
 	/**

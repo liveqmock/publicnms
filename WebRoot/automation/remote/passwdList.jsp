@@ -182,10 +182,65 @@ DIV.sabrosus SPAN.disabled {
 		        									</tr>
 		        									<tr>
 														<td>
-															<div class="sabrosus"><span class="disabled"> < </span><span class="current">1</span><a href="javascript:void(0)" onclick="goto_page()">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a>...<a href="#">199</a><a href="#">200</a><a href="#"> > </a>
-															&nbsp;转到<span id="kkpager_gopage_wrap"><input type="button" id="kkpager_btn_go" onclick="kkpager.gopage()" value="确定"><input type="text" id="kkpager_btn_go_input" onfocus="kkpager.focus_gopage()" onkeypress="return kkpager.keypress_gopage(event);" onblur="kkpager.blur_gopage()" value="2"></span>页
+															<div class="sabrosus">
+															<c:set var="cp" value="<%=jp.getCurrentPage()%>"></c:set>
+															<c:set var="tp" value="<%=jp.getPageTotal()%>"></c:set>
+															<c:choose>
+																<c:when test="${cp==1 }">
+																	<span class="disabled" title="首页">首页</span>
+																</c:when>
+																<c:otherwise>
+																	<a href="javascript:void(0)" onclick="firstPage();" title="首页">首页</a>
+																</c:otherwise>
+															</c:choose>
+															
+															<c:choose>
+																<c:when test="${cp <= 1 }">
+																    <span class="disabled" title="上一页"> < </span>
+																</c:when>
+																<c:otherwise>
+																	<a href="javascript:void(0)" onclick="precedePage()" title="上一页"> < </a>
+																</c:otherwise>
+															</c:choose>
+															<c:if test="${(cp-2)>0 }">
+																<a href="javascript:void(0)" onclick="toPage(this);"><c:out value="${cp-2 }"></c:out></a>
+															</c:if>
+															<c:if test="${(cp-1)>0 }">
+																<a href="javascript:void(0)" onclick="toPage(this);"><c:out value="${cp-1 }"></c:out></a>
+															</c:if>
+															<span class="current"><c:out value="${cp }"></c:out></span>
+															<c:if test="${(cp+1)<=tp }">
+																<a href="javascript:void(0)" onclick="toPage(this);"><c:out value="${cp+1 }"></c:out></a>
+															</c:if>
+															<c:if test="${(cp+2)<=tp }">
+																<a href="javascript:void(0)" onclick="toPage(this);"><c:out value="${cp+2 }"></c:out></a>
+															</c:if>
+															<c:choose>
+																<c:when test="${cp>=tp }">
+																	 <span class="disabled" title="下一页"> > </span>
+																</c:when>
+																<c:otherwise>
+																	<a href="javascript:void(0)" onclick="nextPage();" title="下一页"> > </a>
+																</c:otherwise>
+															</c:choose>
+															&nbsp;
+															<c:choose>
+																<c:when test="${cp==tp }">
+																	<span class="disabled" title="尾页">尾页</span>
+																</c:when>
+																<c:otherwise>
+																	<a href="javascript:void(0);" onclick="lastPage();" title="尾页">尾页</a>
+																</c:otherwise>
+															</c:choose>
+															
+															&nbsp;<span class="normalsize">共<c:out value="${tp }"></c:out> 页/8条数据</span>
+															&nbsp;转到<span id="kkpager_gopage_wrap"><input type="button" id="kkpager_btn_go" onclick="jumpPage();" value="确定"><input type="text" id="kkpager_btn_go_input" onfocus="kkpager.focus_gopage()" onkeypress="return kkpager.keypress_gopage(event);" onblur="kkpager.blur_gopage()" value=""></span>页
 															</div>
 														</td>
+														<input type="hidden" name="jp" type="text" maxLength="3">
+														<input type="hidden" name="perpagenum"
+				value="<%=request.getParameter("perpagenum") == null ? "" : request.getParameter("perpagenum")%>">
+
 													</tr>
 		        								</table>
 		        							</td>

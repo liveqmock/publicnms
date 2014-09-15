@@ -13,6 +13,7 @@ import com.afunms.common.base.DaoInterface;
 import com.afunms.common.base.JspPage;
 import com.afunms.common.util.SysLogger;
 import com.afunms.common.util.SystemConstant;
+
 /**
  * 
  * @descrition 自动化网络配置文件DAO
@@ -20,28 +21,31 @@ import com.afunms.common.util.SystemConstant;
  * @date Aug 26, 2014 11:05:25 AM
  */
 public class NetCfgFileDao extends BaseDao implements DaoInterface {
-	
+
 	private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 	public NetCfgFileDao() {
 		super("nms_hua3vpncfg");
 	}
-	
-	 public void updateBaseLine(String id,int flag) {
-    	 String sql="";
-    	 if (flag==1) {
-    		 sql="update nms_hua3vpncfg set baseline=1 where id="+id;
-		}else if(flag==2){
-			 sql="update nms_hua3vpncfg set baseline=0";
+
+	public void updateBaseLine(String id, int flag) {
+		String sql = "";
+		if (flag == 1) {
+			sql = "update nms_hua3vpncfg set baseline=1 where id=" + id;
+		} else if (flag == 2) {
+			sql = "update nms_hua3vpncfg set baseline=0";
 		}
-//		System.out.println(sql);
+		// System.out.println(sql);
 		conn.executeUpdate(sql);
-	//	return 
+		// return
 	}
-	 public void cancelBaseLine(String ipaddress) {
-    	 String	sql="update nms_hua3vpncfg set baseline=0 where ipaddress='"+ipaddress+"'";
+
+	public void cancelBaseLine(String ipaddress) {
+		String sql = "update nms_hua3vpncfg set baseline=0 where ipaddress='"
+				+ ipaddress + "'";
 		conn.executeUpdate(sql);
 	}
+
 	public List loadByIp(String ipaddress) {
 		List list = new ArrayList();
 		StringBuffer sql = new StringBuffer();
@@ -57,39 +61,41 @@ public class NetCfgFileDao extends BaseDao implements DaoInterface {
 		}
 		return list;
 	}
-	
-	 public List loadByIds(String[] ids)
-	  {
-		  String split = "";
-		  for(int i=0;i<ids.length;i++)
-		  {
-			  split = ","+ids[i]+split;
-		  }
-		  List list = new ArrayList();
-		  try{
-			  StringBuffer sql = new StringBuffer();
-			  sql.append("select * from nms_hua3vpncfg where id in("+split.substring(1)+")");
-			  rs = conn.executeQuery(sql.toString());
-			  while(rs.next())
-			  {
-				  list.add(loadFromRS(rs));
-			  }
-		  }catch(Exception e){e.printStackTrace();}
-		  return list;
-	  }
-	
-	public List listByPage(int curpage,int perpage)
-	{	
-		return listByPage(curpage,"",perpage);	   
+
+	public List loadByIds(String[] ids) {
+		String split = "";
+		for (int i = 0; i < ids.length; i++) {
+			split = "," + ids[i] + split;
+		}
+		List list = new ArrayList();
+		try {
+			StringBuffer sql = new StringBuffer();
+			sql.append("select * from nms_hua3vpncfg where id in("
+					+ split.substring(1) + ")");
+			rs = conn.executeQuery(sql.toString());
+			while (rs.next()) {
+				list.add(loadFromRS(rs));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return list;
 	}
+
+	public List listByPage(int curpage, int perpage) {
+		return listByPage(curpage, "", perpage);
+	}
+
 	public List listByPage(int curpage, String where, int perpage) {
 		List list = new ArrayList();
 		try {
-			rs = conn.executeQuery("select count(*) from (select max(id) 'id',ipaddress,fileName,descri,backup_time,file_size,bkp_type,baseline from nms_hua3vpncfg group by ipaddress) t");
+			rs = conn
+					.executeQuery("select count(*) from (select max(id) 'id',ipaddress,fileName,descri,backup_time,file_size,bkp_type,baseline from nms_hua3vpncfg group by ipaddress) t");
 			if (rs.next())
 				jspPage = new JspPage(perpage, curpage, rs.getInt(1));
 
-			rs = conn.executeQuery("select max(id) 'id',ipaddress,fileName,descri,backup_time,file_size,bkp_type,baseline from nms_hua3vpncfg group by ipaddress;");
+			rs = conn
+					.executeQuery("select max(id) 'id',ipaddress,fileName,descri,backup_time,file_size,bkp_type,baseline from nms_hua3vpncfg group by ipaddress;");
 			// SysLogger.info("select * from " + table + " " + where );
 			int loop = 0;
 			while (rs.next()) {
@@ -110,7 +116,6 @@ public class NetCfgFileDao extends BaseDao implements DaoInterface {
 	}
 
 	public boolean save(BaseVo vo) {
-		// TODO Auto-generated method stub
 		NetCfgFile h3 = (NetCfgFile) vo;
 		StringBuffer sql = new StringBuffer(
 				"insert into nms_hua3vpncfg(id,ipaddress,fileName,descri,backup_time,file_size,bkp_type,baseline) values(");
@@ -121,22 +126,20 @@ public class NetCfgFileDao extends BaseDao implements DaoInterface {
 		sql.append(h3.getFileName());
 		sql.append("','");
 		sql.append(h3.getDescri());
-		
-		
-		//Calendar tempCal = (Calendar)h3.getBackupTime();							
+
+		// Calendar tempCal = (Calendar)h3.getBackupTime();
 		Date cc = h3.getBackupTime();
 		String recordtime = sdf.format(cc);
-		if("mysql".equalsIgnoreCase(SystemConstant.DBType)){
+		if ("mysql".equalsIgnoreCase(SystemConstant.DBType)) {
 			sql.append("','");
 			sql.append(h3.getBackupTime());
 			sql.append("',");
-		}else if("oracle".equalsIgnoreCase(SystemConstant.DBType)){
+		} else if ("oracle".equalsIgnoreCase(SystemConstant.DBType)) {
 			sql.append("',");
-			sql.append("to_date('"+recordtime+"','YYYY-MM-DD HH24:MI:SS')");
+			sql.append("to_date('" + recordtime + "','YYYY-MM-DD HH24:MI:SS')");
 			sql.append(",");
 		}
-		
-		
+
 		sql.append(h3.getFileSize());
 		sql.append(",'");
 		sql.append(h3.getBkpType());
@@ -148,14 +151,11 @@ public class NetCfgFileDao extends BaseDao implements DaoInterface {
 	}
 
 	public boolean update(BaseVo vo) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public BaseVo loadFromRS(ResultSet rs) {
-		// TODO Auto-generated method stub
-
 		NetCfgFile vo = new NetCfgFile();
 		try {
 			vo.setId(rs.getInt("id"));
@@ -179,34 +179,39 @@ public class NetCfgFileDao extends BaseDao implements DaoInterface {
 	public List getDeviceWithLastModify() {
 		List list = null;
 		String sql = "";
-		if("mysql".equalsIgnoreCase(SystemConstant.DBType)){
+		if ("mysql".equalsIgnoreCase(SystemConstant.DBType)) {
 			sql = "select max(id) as id,ipaddress,fileName,descri,max(backup_time) as backup_time,file_size,bkp_type,baseline from nms_hua3vpncfg  group by ipaddress";
-		}else if("oracle".equalsIgnoreCase(SystemConstant.DBType)){
-			//sql = "select max(id) as id,ipaddress,fileName,descri,max(backup_time) as backup_time,file_size,bkp_type,baseline from nms_hua3vpncfg  group by ipaddress,fileName,descri,backup_time,file_size,bkp_type,baseline";
+		} else if ("oracle".equalsIgnoreCase(SystemConstant.DBType)) {
+			// sql =
+			// "select max(id) as id,ipaddress,fileName,descri,max(backup_time) as backup_time,file_size,bkp_type,baseline from nms_hua3vpncfg  group by ipaddress,fileName,descri,backup_time,file_size,bkp_type,baseline";
 			sql = "select * from nms_hua3vpncfg  where backup_time in(select max(backup_time) as backup_time from nms_hua3vpncfg group by  ipaddress) and id in(select max(id) as id from nms_hua3vpncfg group by  ipaddress)";
 		}
-		
+
 		list = this.findByCriteria(sql);
 		return list;
 	}
+
 	/*
 	 * 获得含有配置文件的设备，List返回含有最近一次备份文件更新的设备。
 	 */
-	public List getDeviceByIps(List iplist,String type) {
-		StringBuffer sBuffer=new StringBuffer();
+	public List getDeviceByIps(List iplist, String type) {
+		StringBuffer sBuffer = new StringBuffer();
 		for (int i = 0; i < iplist.size(); i++) {
-			if (i<iplist.size()-1) {
-				sBuffer.append(iplist.get(i)+"','");
-			}else {
-				sBuffer.append(iplist.get(i)+"'");
+			if (i < iplist.size() - 1) {
+				sBuffer.append(iplist.get(i) + "','");
+			} else {
+				sBuffer.append(iplist.get(i) + "'");
 			}
-			
+
 		}
 		List list = null;
-		String sql = "select max(id) as id,ipaddress,fileName,descri,max(backup_time) as backup_time,file_size,bkp_type,baseline from nms_hua3vpncfg where ipaddress in('"+sBuffer.toString()+") and bkp_type='"+type+"' group by ipaddress,fileName,descri,backup_time,file_size,bkp_type,baseline";
+		String sql = "select max(id) as id,ipaddress,fileName,descri,max(backup_time) as backup_time,file_size,bkp_type,baseline from nms_hua3vpncfg where ipaddress in('"
+				+ sBuffer.toString()
+				+ ") and bkp_type='"
+				+ type
+				+ "' group by ipaddress,fileName,descri,backup_time,file_size,bkp_type,baseline";
 		list = this.findByCriteria(sql);
 		return list;
 	}
 
 }
-

@@ -18,12 +18,17 @@ public interface DaoInterface
 	public List loadAll();
 	
 	/**
-	 * 分页列表 
+	 * 无条件分页列表 
+	 * @param curpage 当前页码
+	 * @param perpage 每页应该显示的记录数
 	 */
 	public List listByPage(int curpage,int perpage);
 	
 	/**
 	 * 带条件的分页列表 
+	 * @param curpage 当前页码
+	 * @param where 分页条件语句
+	 * @param perpage 每页应该显示的记录数
 	 */
 	public List listByPage(int curpage,String where,int perpage);
 	

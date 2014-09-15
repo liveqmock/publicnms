@@ -73,20 +73,18 @@
 
   function goto_page()
   {
-	alert(1);
-    if ( mainForm.jp.value == "" ){
-		alert(2);
-       return;}
+	
+    if ( mainForm.jp.value == "" )
+       return;
     if ( isNaN(mainForm.jp.value) )
     {
-		alert(3);
        mainForm.jp.value = ""
        return;
     }
-	
+
     var a = totalpages;
+	alert(mainForm.jp.value);
     var b = mainForm.jp.value;
-		alert(b);
     if( b == "" || b < 1 || b > a )
     {
       mainForm.jp.value = "";
@@ -100,6 +98,60 @@
     }
   }
 
+  /*王文波 2014-9-12 16:40:03 功能：跳转到某一页*/
+ function toPage(page){
+	mainForm.jp.value = $(page).text();
+	if ( mainForm.jp.value == "" )
+       return;
+    if ( isNaN(mainForm.jp.value) )
+    {
+       mainForm.jp.value = ""
+       return;
+    }
+
+    var a = totalpages;
+    var b = mainForm.jp.value;
+    if( b == "" || b < 1 || b > a )
+    {
+      mainForm.jp.value = "";
+      mainForm.jp.focus();
+      return;
+    }
+    else
+    {
+      mainForm.action = listAction;
+      mainForm.submit();
+    }
+ }
+ 
+ /* 王文波 2014年9月15日 15:28:59 功能：跳转页面*/
+ function jumpPage(){
+ 	mainForm.jp.value = $("#kkpager_btn_go_input").val();
+ 	alert(mainForm.jp.value);
+ 	if ( mainForm.jp.value == "" )
+        return;
+     if ( isNaN(mainForm.jp.value) )
+     {
+        mainForm.jp.value = ""
+        return;
+     }
+
+     var a = totalpages;
+ 	alert(mainForm.jp.value);
+     var b = mainForm.jp.value;
+     if( b == "" || b < 1 || b > a )
+     {
+       mainForm.jp.value = "";
+       mainForm.jp.focus();
+       return;
+     }
+     else
+     {
+       mainForm.action = listAction;
+       mainForm.submit();
+     }
+  }
+ 
   function toDelete()
   {
      var bExist = false;

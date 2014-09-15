@@ -15,6 +15,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.commons.lang.StringUtils;
+
+import com.afunms.automation.dao.NetCfgFileNodeDao;
 import com.afunms.common.util.BidSQLUitl;
 import com.afunms.common.util.SessionConstant;
 import com.afunms.common.util.SysLogger;
@@ -122,19 +125,19 @@ public class BaseManager
    
    protected int getPerPagenum()
    {
-      int perPage = 15;
+      int perPage = 5;
       try
       {
          String perpagenum = getParaValue("perpagenum");
          if(perpagenum==null||"".equals(perpagenum)){
-        	 perPage = 15;
+        	 perPage = 5;
          }else{
         	 perPage = Integer.parseInt(perpagenum);
          }
       }
       catch(NumberFormatException e)
       {
-    	  perPage = 15;
+    	  perPage = 5;
       }
       return perPage;
    }
@@ -153,18 +156,20 @@ public class BaseManager
     * 分页显示记录
     * targetJsp:目录jsp
     */
-   protected String list(DaoInterface dao)
-   {
-	   String targetJsp = null;
-	   	int perpage = getPerPagenum();
-       List list = dao.listByPage(getCurrentPage(),perpage);
-       if(list==null) return null;
-       
-       request.setAttribute("page",dao.getPage());
-       request.setAttribute("list",list);
-       targetJsp = getTarget(); 
-	   return targetJsp;
-   }
+	protected String list(DaoInterface dao) {
+		String targetJsp = null;
+		//获取每页显示记录条数
+		int perpage = getPerPagenum();
+		//分页进行查询
+		List list = dao.listByPage(getCurrentPage(), perpage);
+		if (list == null){
+			return null;
+		}
+		request.setAttribute("page", dao.getPage());
+		request.setAttribute("list", list);
+		targetJsp = getTarget();
+		return targetJsp;
+	}
    
    /**
     * 分页显示记录
